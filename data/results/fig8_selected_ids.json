@@ -12,5 +12,10 @@
   {
     "id_originale": "https://www.theguardian.com/world/2025/dec/26/russia-selling-personal-data-leaks-probiv-ukraine-spies_s5",
     "platform": "The Guardian"
+  },
+  {
+    "id_originale": "https://www.bbc.com/news/articles/clypg7lr9kko_s9",
+    "platform": "BBC News",
+    "note": "Collected but excluded from the analysis (Section 4.1); not a row of Table 2."
   }
 ]
