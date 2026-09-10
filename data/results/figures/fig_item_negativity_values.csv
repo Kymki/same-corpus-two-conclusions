@@ -1,0 +1,4 @@
+source,n_items,mean_negprob_pct,ci_lo,ci_hi
+The Guardian,1773,53.59,53.12,54.07
+Reddit,6655,56.84,56.19,57.47
+Telegram,1610,53.41,52.36,54.53

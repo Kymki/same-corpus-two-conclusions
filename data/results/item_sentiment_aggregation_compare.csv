@@ -1,0 +1,6 @@
+,mean_prob,mean_prob,mean_prob,majority_vote,majority_vote,majority_vote
+sentiment_item_meanprob,Negative,Neutral,Positive,Negative,Neutral,Positive
+fonte,,,,,,
+Guardian,90.7,8.7,0.6,86.6,12.5,0.9
+Reddit_Commento,69.3,21.1,9.6,66.9,22.8,10.3
+Telegram,67.8,28.1,4.0,66.1,29.8,4.2

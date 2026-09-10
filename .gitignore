@@ -1,0 +1,144 @@
+# Credenziali e Segreti
+.env
+*.session
+*.key
+*.cert
+secrets.py
+
+# Dati e Risultati (Dataset pesanti o privati)
+# NB: si usa data/* (non data/) perche' git non puo' re-includere file
+# dentro una directory interamente esclusa.
+data/*
+!data/raw/
+data/raw/*
+!data/results/
+data/results/*
+!data/results/figures/
+*.csv
+*.txt
+*.json
+*.xlsx
+*.parquet
+
+# --- Eccezioni: artefatti della run canonica (riproducibilita' del paper) ---
+# Dataset "dehydrated": solo metadati Guardian (id/url/titolo/data), niente
+# full-text (termini d'uso delle testate). Il testo integrale si rigenera con
+# Build_Dataset/Papers/05_guardian.py o e' disponibile su richiesta.
+!data/raw/Guardian_articles_metadata.csv
+!data/README_DATA.md
+# Tabelle LaTeX e output del topic modeling
+!data/results/*.tex
+!data/results/lda_topics_en.txt
+!data/results/lda_topics_it.txt
+!data/results/optimal_k_en.json
+!data/results/optimal_k_it.json
+!data/results/coherence_values_en.csv
+!data/results/coherence_values_it.csv
+# Riproducibilita' Tabella 2 (frammenti narrativi con ID tracciabili)
+!data/results/fig8_selected_ids.json
+!data/results/fig8_candidates.csv
+# Campione di validazione sentiment (annotazione manuale cieca)
+!data/results/validation_annotation_TODO.csv
+!data/results/validation_sampling_cells.csv
+# Esperimento item-level k-sweep (richiesta RP: pseudo-replicazione)
+!data/results/item_ksweep_similarity.csv
+!data/results/item_coherence_values.csv
+!data/results/item_sentiment_by_source.csv
+!data/results/items_en_meta.csv
+!data/results/item_topics_k*.txt
+!data/results/document_topics_items_k*.csv
+# Figure pubblicate (PNG + PDF + tex)
+!data/results/figures/*
+
+# Python e Ambienti Virtuali
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+venv_gpu/
+env_gpu/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE e Sistema Operativo
+.vscode/
+.idea/
+.project
+.pydevproject
+.settings/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Log e Debug
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Cleanup for Publication
+scratch_*.py
+candidates.json
+*.zip
+Figure_Paper_Tesi/
+
+# Sentiment item-level: confronto aggregazioni + artefatto lunghezza (richiesta RP)
+!data/results/item_sentiment_aggregation_compare.csv
+!data/results/item_sentiment_length_correlation.csv
+!data/results/item_sentiment_length_artifact.csv
+
+# Interazione topic x piattaforma sul sentiment (richiesta RP)
+!data/results/item_topic_sentiment_cells.csv
+
+# Validazione sentiment con annotazioni reali + calibrazione
+!data/results/validation_annotation_labeled.csv
+!data/results/sentiment_calibration.csv
+!data/results/sentiment_reliability_diagram.png
+!data/results/sentiment_confusion_matrix.png
+
+# Calibrazione post-stratificata (richiesta RP)
+!data/results/calibration_poststratified.csv
+!data/results/calibration_bins_by_source.csv
+
+# Misure continue alternative (richiesta RP)
+!data/results/continuous_measures_by_source.csv
+!data/results/continuous_measures_by_topic_platform.csv
+# Check filtro simmetrico (richiesta RP)
+!data/results/symfilter_corpus_profile.csv
+!data/results/symfilter_coherence_values.csv
+!data/results/symfilter_ksweep_similarity.csv
+!data/results/length_confound_diagnostic.csv
+!data/results/lengthmatched_ksweep_similarity.csv
+!data/results/chunked_balanced_ksweep_similarity.csv
+!data/results/symfilter_continuous_by_source.csv
+!data/results/symfilter_continuous_by_topic_platform_k*.csv
+!data/results/symfilter_topic_terms_k*.txt
+!data/results/commonwindow_corpus_profile.csv
+!data/results/commonwindow_coherence_values.csv
+!data/results/commonwindow_ksweep_similarity.csv
+
+# Pseudonimizzazione ID Reddit: salt e mappa inversa restano fuori dal repo
+reddit_pseudonym_salt.txt
+reddit_pseudonym_map*.json
+ID_riservati*.json
+!data/results/fig_length_artifact_sentence_pool.csv
+
+# La regola *.txt piu' sopra escluderebbe la licenza della documentazione
+!LICENSE-docs.txt

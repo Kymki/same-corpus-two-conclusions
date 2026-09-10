@@ -1,0 +1,30 @@
+topic,topic_label,platform,n_items,neg_prob_mean,neg_prob_lo,neg_prob_hi,valence_mean,valence_lo,valence_hi,charge_mean,charge_lo,charge_hi
+0,Hungary & Orban politics,Guardian,75,55.58,53.76,57.26,-40.64,-43.54,-37.98,70.51,69.27,71.6
+0,Hungary & Orban politics,Reddit,180,54.19,50.33,57.9,-36.0,-42.38,-29.54,72.38,69.91,74.61
+0,Hungary & Orban politics,Telegram,31,48.97,40.95,57.49,-31.64,-45.09,-18.25,66.31,60.48,72.06
+1,Energy & prices,Guardian,172,49.61,48.21,50.9,-33.94,-36.14,-31.86,65.28,64.44,66.16
+1,Energy & prices,Reddit,324,54.11,51.27,56.84,-39.69,-43.85,-35.82,68.53,66.51,70.59
+2,General war commentary,Guardian,249,44.48,43.06,45.85,-24.18,-26.4,-22.12,64.78,64.03,65.56
+2,General war commentary,Reddit,2233,54.79,53.67,55.93,-36.85,-38.68,-34.84,72.73,72.07,73.44
+2,General war commentary,Telegram,76,52.82,47.39,58.33,-36.63,-44.5,-28.1,69.02,65.5,72.43
+3,Drone & missile strikes,Guardian,294,57.45,56.51,58.42,-46.06,-47.42,-44.63,68.83,68.24,69.44
+3,Drone & missile strikes,Reddit,928,54.66,53.05,56.23,-42.77,-44.99,-40.28,66.54,65.34,67.65
+3,Drone & missile strikes,Telegram,580,56.37,54.57,58.1,-46.61,-48.96,-44.28,66.12,64.84,67.25
+4,Misc international news,Guardian,129,52.46,51.18,53.88,-37.52,-39.45,-35.46,67.4,66.56,68.24
+4,Misc international news,Reddit,198,50.88,47.0,54.63,-33.0,-39.21,-26.67,68.77,66.08,71.48
+4,Misc international news,Telegram,36,67.17,60.57,73.56,-58.13,-66.81,-47.41,76.22,71.76,80.23
+5,Ukraine-Russia military,Guardian,90,56.87,54.66,59.06,-45.69,-49.01,-42.47,68.05,66.34,69.68
+5,Ukraine-Russia military,Reddit,1838,61.02,59.96,62.07,-48.47,-50.18,-46.84,73.58,72.88,74.31
+5,Ukraine-Russia military,Telegram,329,53.22,50.91,55.45,-40.82,-43.93,-37.56,65.63,63.99,67.24
+6,Trump & geopolitics,Guardian,253,59.17,57.99,60.28,-45.97,-47.57,-44.3,72.38,71.68,73.06
+6,Trump & geopolitics,Reddit,266,65.49,62.69,68.49,-53.05,-57.35,-48.61,77.92,76.15,79.53
+6,Trump & geopolitics,Telegram,101,51.43,47.3,55.62,-33.39,-40.27,-26.49,69.47,66.86,72.06
+7,Iran & nuclear,Guardian,57,60.14,58.58,61.76,-48.72,-51.05,-46.09,71.56,70.32,72.69
+7,Iran & nuclear,Reddit,205,60.66,57.38,64.18,-48.98,-54.2,-43.98,72.34,70.16,74.41
+7,Iran & nuclear,Telegram,185,54.75,52.06,57.66,-41.57,-45.75,-37.59,67.93,66.15,69.75
+8,Peace talks (Putin/Zelensky/Trump),Guardian,256,53.35,52.31,54.37,-39.28,-40.91,-37.73,67.43,66.73,68.14
+8,Peace talks (Putin/Zelensky/Trump),Reddit,348,55.71,52.99,58.34,-39.57,-44.26,-35.17,71.85,70.17,73.44
+8,Peace talks (Putin/Zelensky/Trump),Telegram,161,43.23,39.74,46.67,-26.65,-31.5,-21.88,59.81,57.41,62.19
+9,Europe & NATO defence,Guardian,198,52.55,51.23,53.68,-37.91,-39.77,-36.06,67.18,66.45,67.99
+9,Europe & NATO defence,Reddit,135,47.73,43.79,52.18,-29.45,-36.32,-22.14,66.01,62.95,69.06
+9,Europe & NATO defence,Telegram,86,48.39,44.15,52.61,-30.75,-37.59,-24.25,66.03,63.25,68.71

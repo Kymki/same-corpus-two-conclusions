@@ -1,0 +1,7 @@
+Topic EN #0: 0.014*"ukraine" + 0.012*"say" + 0.011*"country" + 0.011*"russia" + 0.010*"war" + 0.007*"military" + 0.007*"international" + 0.007*"law" + 0.007*"europe" + 0.006*"force"
+Topic EN #1: 0.031*"russian" + 0.030*"drone" + 0.025*"attack" + 0.022*"say" + 0.020*"ukraine" + 0.020*"ukrainian" + 0.017*"strike" + 0.013*"russia" + 0.012*"missile" + 0.012*"region"
+Topic EN #2: 0.023*"trump" + 0.016*"say" + 0.016*"minister" + 0.015*"european" + 0.012*"leader" + 0.010*"president" + 0.010*"prime" + 0.007*"party" + 0.007*"europe" + 0.007*"greenland"
+Topic EN #3: 0.008*"year" + 0.007*"child" + 0.006*"man" + 0.006*"new" + 0.006*"people" + 0.005*"say" + 0.005*"report" + 0.005*"medium" + 0.004*"family" + 0.004*"woman"
+Topic EN #4: 0.034*"ukraine" + 0.033*"say" + 0.021*"trump" + 0.020*"putin" + 0.017*"war" + 0.016*"russia" + 0.015*"president" + 0.015*"zelenskyy" + 0.014*"peace" + 0.013*"talk"
+Topic EN #5: 0.012*"oil" + 0.009*"say" + 0.009*"energy" + 0.009*"year" + 0.008*"price" + 0.007*"sanction" + 0.007*"war" + 0.007*"iran" + 0.007*"global" + 0.006*"company"
+Topic EN #6: 0.032*"not" + 0.017*"like" + 0.014*"say" + 0.012*"think" + 0.012*"people" + 0.009*"time" + 0.009*"know" + 0.009*"world" + 0.009*"good" + 0.008*"look"

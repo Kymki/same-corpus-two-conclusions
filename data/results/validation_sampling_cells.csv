@@ -1,0 +1,10 @@
+fonte,predicted_class,n_sampled,n_corpus_en,corpus_share_en
+Guardian,Negative,40,48354,0.494043
+Guardian,Neutral,40,25699,0.262572
+Guardian,Positive,40,7529,0.076925
+Reddit_Commento,Negative,40,7509,0.076721
+Reddit_Commento,Neutral,40,3095,0.031622
+Reddit_Commento,Positive,40,1242,0.01269
+Telegram,Negative,40,2636,0.026933
+Telegram,Neutral,40,1524,0.015571
+Telegram,Positive,40,286,0.002922

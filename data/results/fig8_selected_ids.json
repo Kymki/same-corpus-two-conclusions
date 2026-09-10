@@ -1,0 +1,16 @@
+[
+  {
+    "id_originale": "r_c327fa4e6065",
+    "platform": "Reddit",
+    "note": "Keyed pseudonym, not the Reddit comment id. The raw identifier is not in this repository; see pseudonymise_reddit_ids.py and the Data Availability statement."
+  },
+  {
+    "id_originale": "15429_s2",
+    "platform": "Telegram",
+    "note": "Telegram message id. Section 3.2 treats the channels as publications: channel posts carry no individual author attribution."
+  },
+  {
+    "id_originale": "https://www.theguardian.com/world/2025/dec/26/russia-selling-personal-data-leaks-probiv-ukraine-spies_s5",
+    "platform": "The Guardian"
+  }
+]

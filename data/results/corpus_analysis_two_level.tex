@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\caption{Volumetric profile of the English corpus at both units of analysis. \emph{Items} are parent documents (articles, comments, messages); \emph{sentences} are the rows produced by sentence-level preprocessing. The two share columns make the length imbalance explicit: long-form articles dominate the sentence count while representing a minority of items; all comparative analyses are therefore conducted at item level. Word counts are whitespace-delimited words, not transformer subword tokens.}
+\label{tab:corpus_two_level}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+ & & & \textbf{Sent./} & \textbf{Words/} & \multicolumn{2}{c}{\textbf{Corpus share (\%)}} \\
+\cmidrule(lr){6-7}
+\textbf{Source} & \textbf{Items} & \textbf{Sentences} & \textbf{item} & \textbf{item} & \textbf{items} & \textbf{sentences} \\
+\midrule
+Reddit & 6,655 & 11,846 & 1.8 & 30 & 66.2 & 12.1 \\
+Telegram & 1,610 & 4,446 & 2.8 & 54 & 16.0 & 4.5 \\
+The Guardian & 1,773 & 81,582 & 46.0 & 1124 & 17.6 & 83.1 \\
+BBC News & 9 & 243 & 27.0 & 532 & 0.1 & 0.2 \\
+\midrule
+Total & 10,047 & 98,117 & 9.8 & 227 & 100.0 & 100.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

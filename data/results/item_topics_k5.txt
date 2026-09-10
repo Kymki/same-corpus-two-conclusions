@@ -1,0 +1,5 @@
+Topic #0: 0.028*"say" + 0.023*"ukraine" + 0.012*"russia" + 0.009*"russian" + 0.008*"european" + 0.007*"president" + 0.007*"war" + 0.007*"putin" + 0.007*"trump" + 0.007*"zelenskyy"
+Topic #1: 0.011*"say" + 0.007*"year" + 0.007*"government" + 0.006*"trump" + 0.005*"country" + 0.004*"people" + 0.004*"china" + 0.004*"new" + 0.004*"party" + 0.003*"world"
+Topic #2: 0.011*"not" + 0.009*"say" + 0.007*"ukraine" + 0.007*"like" + 0.006*"year" + 0.006*"russian" + 0.006*"war" + 0.006*"people" + 0.005*"time" + 0.005*"russia"
+Topic #3: 0.020*"say" + 0.016*"drone" + 0.016*"russian" + 0.013*"ukraine" + 0.010*"attack" + 0.010*"oil" + 0.010*"russia" + 0.009*"strike" + 0.009*"ukrainian" + 0.007*"war"
+Topic #4: 0.021*"trump" + 0.010*"say" + 0.007*"war" + 0.006*"greenland" + 0.006*"president" + 0.006*"world" + 0.006*"europe" + 0.005*"european" + 0.005*"iran" + 0.005*"military"

@@ -1,0 +1,10 @@
+Topic 0: drone, russian, russia, ukrainian, strike, attack, not, war, missile, force
+Topic 1: say, russian, russia, ukrainian, zelenskyy, putin, war, attack, president, kyiv
+Topic 2: say, oil, price, energy, war, russian, sanction, iran, gas, government
+Topic 3: say, russia, minister, european, russian, country, europe, president, war, nato
+Topic 4: trump, say, new, president, government, year, people, donald, report, house
+Topic 5: war, country, iran, nuclear, china, trump, year, world, military, power
+Topic 6: say, not, year, people, time, like, world, work, war, day
+Topic 7: year, chinese, market, world, food, say, new, company, people, win
+Topic 8: orbán, hungary, say, election, hungarian, party, magyar, government, orbáns, year
+Topic 9: trump, say, europe, european, greenland, president, world, nato, security, leader

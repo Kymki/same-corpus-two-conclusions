@@ -1,0 +1,30 @@
+topic,topic_label,platform,n_items,mean_neg_prob,ci_lo,ci_hi
+0,Hungary & Orban politics,Guardian,75,55.6,53.8,57.3
+0,Hungary & Orban politics,Reddit,180,54.2,50.3,58.0
+0,Hungary & Orban politics,Telegram,31,49.0,40.2,57.7
+1,Energy & prices,Guardian,172,49.6,48.1,51.0
+1,Energy & prices,Reddit,324,54.1,51.5,56.8
+2,General war commentary,Guardian,249,44.5,43.1,45.8
+2,General war commentary,Reddit,2233,54.8,53.6,55.8
+2,General war commentary,Telegram,76,52.8,47.9,58.0
+3,Drone & missile strikes,Guardian,294,57.4,56.6,58.3
+3,Drone & missile strikes,Reddit,928,54.7,53.0,56.3
+3,Drone & missile strikes,Telegram,580,56.4,54.6,58.1
+4,Misc international news,Guardian,129,52.5,51.2,53.9
+4,Misc international news,Reddit,198,50.9,46.8,54.8
+4,Misc international news,Telegram,36,67.2,60.2,73.6
+5,Ukraine-Russia military,Guardian,90,56.9,54.6,59.0
+5,Ukraine-Russia military,Reddit,1838,61.0,59.9,62.1
+5,Ukraine-Russia military,Telegram,329,53.2,50.9,55.4
+6,Trump & geopolitics,Guardian,253,59.2,58.0,60.3
+6,Trump & geopolitics,Reddit,266,65.5,62.4,68.6
+6,Trump & geopolitics,Telegram,101,51.4,47.2,56.1
+7,Iran & nuclear,Guardian,57,60.1,58.4,61.9
+7,Iran & nuclear,Reddit,205,60.7,57.4,63.9
+7,Iran & nuclear,Telegram,185,54.7,51.9,57.4
+8,Peace talks (Putin/Zelensky/Trump),Guardian,256,53.4,52.3,54.4
+8,Peace talks (Putin/Zelensky/Trump),Reddit,348,55.7,53.1,58.4
+8,Peace talks (Putin/Zelensky/Trump),Telegram,161,43.2,39.8,46.7
+9,Europe & NATO defence,Guardian,198,52.5,51.3,53.8
+9,Europe & NATO defence,Reddit,135,47.7,43.4,52.1
+9,Europe & NATO defence,Telegram,86,48.4,44.2,52.2

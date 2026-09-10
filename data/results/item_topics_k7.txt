@@ -1,0 +1,7 @@
+Topic #0: 0.029*"say" + 0.023*"ukraine" + 0.010*"russia" + 0.009*"european" + 0.008*"russian" + 0.008*"president" + 0.007*"zelenskyy" + 0.007*"war" + 0.007*"minister" + 0.007*"talk"
+Topic #1: 0.011*"say" + 0.009*"year" + 0.008*"government" + 0.008*"price" + 0.007*"energy" + 0.006*"country" + 0.005*"people" + 0.005*"party" + 0.004*"fuel" + 0.004*"global"
+Topic #2: 0.012*"not" + 0.010*"say" + 0.007*"like" + 0.006*"year" + 0.006*"ukraine" + 0.006*"people" + 0.006*"time" + 0.005*"world" + 0.005*"war" + 0.004*"russian"
+Topic #3: 0.024*"say" + 0.020*"drone" + 0.017*"russian" + 0.014*"ukraine" + 0.012*"attack" + 0.011*"oil" + 0.010*"strike" + 0.010*"ukrainian" + 0.010*"russia" + 0.008*"missile"
+Topic #4: 0.010*"say" + 0.006*"trump" + 0.005*"new" + 0.005*"israel" + 0.005*"government" + 0.005*"report" + 0.004*"year" + 0.004*"people" + 0.004*"story" + 0.004*"news"
+Topic #5: 0.020*"ukraine" + 0.019*"russia" + 0.017*"russian" + 0.012*"war" + 0.010*"military" + 0.009*"say" + 0.008*"ukrainian" + 0.007*"putin" + 0.006*"not" + 0.006*"force"
+Topic #6: 0.025*"trump" + 0.013*"say" + 0.008*"president" + 0.007*"war" + 0.007*"iran" + 0.007*"europe" + 0.006*"greenland" + 0.006*"european" + 0.005*"world" + 0.005*"country"

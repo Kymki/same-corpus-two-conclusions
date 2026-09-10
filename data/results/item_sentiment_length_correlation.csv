@@ -1,0 +1,5 @@
+scope,n_items,rho_len_vs_negprob,p_negprob,rho_len_vs_neg_meanprob,p_meanprob,rho_len_vs_neg_vote,p_vote
+ALL,10038,-0.088,8.0e-19,0.182,1.4e-75,0.129,2.9e-38
+Guardian,1773,-0.123,1.9e-07,0.009,7.0e-01,-0.014,5.5e-01
+Reddit_Commento,6655,-0.041,8.1e-04,0.099,5.4e-16,0.032,9.4e-03
+Telegram,1610,-0.087,4.5e-04,0.023,3.6e-01,-0.022,3.7e-01

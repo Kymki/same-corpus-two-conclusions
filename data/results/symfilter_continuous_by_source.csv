@@ -1,0 +1,4 @@
+source,n_items,neg_prob_mean,neg_prob_lo,neg_prob_hi,valence_mean,valence_lo,valence_hi,charge_mean,charge_lo,charge_hi
+Guardian,1773,53.59,53.12,54.07,-39.13,-39.88,-38.38,68.05,67.76,68.31
+Reddit,3404,59.82,58.98,60.67,-46.09,-47.34,-44.88,73.55,73.04,74.06
+Telegram,1115,52.93,51.55,54.18,-40.23,-41.93,-38.45,65.62,64.73,66.46

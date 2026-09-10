@@ -1,0 +1,12 @@
+n_sentences,simulated_argmax_negative_pct,simulated_mean_negprob_pct,kind,source,sentences_per_item,observed_argmax_negative_pct,observed_mean_negprob_pct
+1.0,59.42,52.16,simulated,,,,
+2.0,70.55,52.16,simulated,,,,
+3.0,74.7,52.16,simulated,,,,
+5.0,82.28,52.16,simulated,,,,
+10.0,91.07,52.16,simulated,,,,
+20.0,97.42,52.16,simulated,,,,
+46.0,99.88,52.16,simulated,,,,
+100.0,100.0,52.16,simulated,,,,
+,,,observed,The Guardian,46.01,90.7,53.6
+,,,observed,Reddit,1.78,69.3,56.8
+,,,observed,Telegram,2.76,67.8,53.4
