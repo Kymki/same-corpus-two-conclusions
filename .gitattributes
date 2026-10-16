@@ -1,0 +1,4 @@
+# Files whose SHA-256 is recorded in BLIND_PROTOCOL.md: no line-ending conversion,
+# so the hash is the same on every platform.
+topic_category_rule.py -text
+Topic_Modeling/15_topic_charge_summary.py -text

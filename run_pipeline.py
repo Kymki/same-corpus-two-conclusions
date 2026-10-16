@@ -16,7 +16,11 @@ with a notice rather than failing.
 
 Second, the raw corpora are not redistributed (see README), so stages 1-3 cannot
 be run from a fresh clone. Everything downstream of
-data/results/items_en_meta.csv can.
+data/results/items_en_meta.csv can. The same limit applies to the two revision
+scripts that read the raw collections: the --all-guardian preprocessing in stage 13
+and Topic_Modeling/17_telegram_channels.py in stage 12.
+
+Stages 10-13, and the third reading in stage 6, were added in the revision.
 
 The figure scripts named fig2_ to fig7_ in Figures/ belong to an earlier,
 sentence-level version of the analysis and do not correspond to any figure in the
@@ -35,7 +39,8 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 RESULTS = os.path.join(BASE, "data", "results")
 LABELLED = os.path.join(RESULTS, "validation_annotation_labeled.csv")
 
-# (stage number, title, [(script relative to BASE, required input or None)])
+# (stage number, title, [(script relative to BASE, followed by its arguments if any;
+#                         required input or None)])
 PLAN = [
     (1, "Preprocessing: langdetect per document, sentence split, lemmatisation", [
         ("Lemmatization/01_pre-processing_1.1.py", None),
@@ -63,6 +68,7 @@ PLAN = [
         ("Sentiment_analysis/generate_annotation_sample.py", None),
         ("Sentiment_analysis/02_sentiment_validation.py", LABELLED),
         ("Sentiment_analysis/07_calibration_poststratified.py", LABELLED),
+        ("Sentiment_analysis/12_third_reader_adjudication.py", LABELLED),
     ]),
     (7, "RQ2 - measure dependence across continuous summaries (Section 4.5)", [
         ("Sentiment_analysis/08_continuous_measures.py", None),
@@ -79,30 +85,66 @@ PLAN = [
         ("Topic_Modeling/08_chunked_balanced_ksweep.py", None),
         ("Topic_Modeling/09_common_window_ksweep.py", None),
     ]),
-    (10, "Table 2 - verbatim fragments with traceable identifiers (Section 4.9)", [
+    (10, "Revision: reproducibility of the LDA results, and 22 solutions per k "
+         "(11 document orders x 2 seeds) (Sections 3.5, 4.6)", [
+        ("Topic_Modeling/verify_lda_order.py", None),
+        ("Topic_Modeling/13_order_seed_repetitions.py symmetric", None),
+        ("Topic_Modeling/13_order_seed_repetitions.py chunked", None),
+        ("Topic_Modeling/13_order_seed_repetitions.py summary", None),
+        ("Topic_Modeling/19_coherence_extended_grid.py", None),
+    ]),
+    (11, "Revision: rebalanced chunked design, BERTopic, and the designs side by side "
+         "(Section 4.6)", [
+        ("Topic_Modeling/10_chunked_rebalanced_ksweep.py", None),
+        ("Topic_Modeling/11_bertopic_symmetric_ksweep.py", None),
+        ("Topic_Modeling/12_length_designs_table.py", None),
+    ]),
+    # Re-running 14 replaces the archived repetitions to which the verdict of Section
+    # 4.8 was applied; LdaMulticore is not bit-for-bit deterministic, so the new ones
+    # may differ slightly. See BLIND_PROTOCOL.md. build_item_clusters.py is not a
+    # stage: it needs the private pseudonym map, and its output, item_clusters.csv,
+    # is committed.
+    (12, "Revision: Section 4.8 re-tested on the 22 solutions, by channel, with "
+         "cluster bootstrap", [
+        ("Topic_Modeling/14_topic_charge_repetitions.py", None),
+        ("Topic_Modeling/15_topic_charge_summary.py", None),
+        ("Topic_Modeling/17_telegram_channels.py", None),
+        ("Topic_Modeling/18_cluster_bootstrap.py", None),
+    ]),
+    (13, "Revision: relevance filter on all Guardian articles, common collection "
+         "window, Guardian articles at short-form lengths (Section 4.3)", [
+        ("Lemmatization/01_pre-processing_1.1.py --all-guardian", None),
+        ("Topic_Modeling/16_symfilter_all_guardian.py", None),
+        ("Sentiment_analysis/10_common_window_sentiment.py", None),
+        ("Sentiment_analysis/11_guardian_short_sample.py", None),
+    ]),
+    (14, "Table 2 - verbatim fragments with traceable identifiers (Section 4.9)", [
         ("Figures/fig8_extract_candidates.py", None),
         ("Figures/fig8_narrative_fragments.py", None),
     ]),
-    (11, "Figures 1-4, each regenerated from the committed derived tables", [
+    (15, "Figures, each regenerated from the committed derived tables", [
         ("Figures/fig_length_artifact.py", None),
         ("Figures/fig_item_negativity.py", None),
         ("Figures/fig_preprocessing_regimes.py", None),
         ("Figures/fig_topic_charge.py", None),
+        ("Figures/fig_order_repetitions.py", None),
     ]),
-    (12, "Replace Reddit identifiers with keyed pseudonyms before publication", [
+    (16, "Replace Reddit identifiers with keyed pseudonyms before publication", [
         ("pseudonymise_reddit_ids.py", None),
     ]),
 ]
 
 
-def run(rel):
+def run(entry):
+    rel, *args = entry.split()
     path = os.path.join(BASE, rel)
     if not os.path.exists(path):
         sys.exit(f"ERROR: script not found: {rel}")
-    print(f"\n--- {rel}")
-    r = subprocess.run([sys.executable, path], cwd=os.path.dirname(path) or BASE, text=True)
+    print(f"\n--- {entry}")
+    r = subprocess.run([sys.executable, path, *args], cwd=os.path.dirname(path) or BASE,
+                       text=True)
     if r.returncode != 0:
-        sys.exit(f"\nPipeline stopped: {rel} exited with code {r.returncode}")
+        sys.exit(f"\nPipeline stopped: {entry} exited with code {r.returncode}")
 
 
 def main():

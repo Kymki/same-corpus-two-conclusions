@@ -1,0 +1,58 @@
+% Triage 2.1 -- length-control designs side by side (for Section 4.6).
+% Generated from data/results/{item_ksweep,symfilter_ksweep,lengthmatched_ksweep,
+% chunked_balanced_ksweep}_similarity.csv; item counts recomputed from the
+% consolidated corpus with the same filter and length rules as scripts 07/08.
+% Requires \usepackage{booktabs}.
+
+\begin{table}[H]
+\caption{Most similar platform pair by cosine similarity under seven corpus designs.
+Each cell gives the leading pair and its lead over the runner-up; bold marks a lead
+whose 95\% bootstrap interval does not overlap the runner-up's. G = \textit{The Guardian},
+R = Reddit, T = Telegram. Designs A--C truncate every item to exactly $N$ lemmatised
+tokens (randomly sampled) and drop shorter items; chunked-balanced designs split items
+into consecutive $C$-token chunks and average soft topic distributions per item.
+Item retention for each design is given in Table~\ref{tab:design_costs}.\label{tab:length_designs}}
+\centering
+\small
+\begin{tabular}{l l ccccc}
+\toprule
+Design & Filter & $k=5$ & $k=7$ & $k=10$ & $k=15$ & $k=21$ \\
+\midrule
+Full length          & Guardian only & G--T (+0.03) & \textbf{G--T (+0.10)} & G--T (+0.05) & \textbf{G--T (+0.28)} & \textbf{R--T (+0.24)} \\
+Full length          & symmetric     & G--T (+0.01) & \textbf{R--T (+0.54)} & \textbf{R--T (+0.56)} & \textbf{R--T (+0.56)} & \textbf{R--T (+0.33)} \\
+\midrule
+A: $N=15$            & symmetric     & R--T (+0.01) & \textbf{G--R (+0.08)} & G--T (+0.04) & R--T (+0.04) & G--R (+0.07) \\
+B: $N=15$            & none          & \textbf{G--T (+0.19)} & G--T (+0.03) & G--R (+0.03) & G--R (+0.04) & G--R (+0.03) \\
+C: $N=25$            & symmetric     & G--R (+0.09) & G--R (+0.03) & G--R (+0.06) & G--R (+0.01) & R--T (+0.01) \\
+\midrule
+Chunked, $C=10$      & symmetric     & \textbf{R--T (+0.07)} & \textbf{R--T (+0.04)} & R--T (+0.03) & G--R (+0.01) & R--T (+0.03) \\
+Chunked, $C=20$      & symmetric     & \textbf{R--T (+0.22)} & \textbf{R--T (+0.22)} & \textbf{R--T (+0.11)} & \textbf{R--T (+0.14)} & G--T (+0.04) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\caption{Items retained by each design, as a share of the subcorpus it starts from
+(symmetric designs: the 6,292-item symmetrically filtered subset; design B: the full
+English corpus). \textit{The Guardian} loses no items under any design; the
+length-controlled designs retain only the longer Reddit and Telegram items
+(median item length in the symmetric subset: Reddit 11, Telegram 19, \textit{Guardian} 429 lemmatised tokens).
+For the chunked designs, LDA training chunks per source are capped at 4,000; Telegram
+falls short of the cap at both chunk sizes and Reddit at $C=20$, so training is not
+balanced across sources.\label{tab:design_costs}}
+\centering
+\small
+\begin{tabular}{l rrr r}
+\toprule
+Design & \textit{Guardian} & Reddit & Telegram & Training chunks (G / R / T) \\
+\midrule
+Symmetric filter, full length & 1,773 (100\%) & 3,404 (100\%) & 1,115 (100\%) & -- \\
+A: $N=15$, symmetric          & 1,773 (100\%) & 1,288 (37.8\%) & 729 (65.4\%) & -- \\
+B: $N=15$, no filter          & 1,773 (100\%) & 1,814 (27.3\%)$^{a}$ & 1,083 (67.3\%)$^{a}$ & -- \\
+C: $N=25$, symmetric          & 1,773 (100\%) & 647 (19.0\%) & 406 (36.4\%) & -- \\
+Chunked, $C=10$, symmetric    & 1,773 (100\%) & 2,081 (61.1\%) & 956 (85.7\%) & 4,000 / 4,000 / 2,806 \\
+Chunked, $C=20$, symmetric    & 1,773 (100\%) & 890 (26.1\%) & 556 (49.9\%) & 4,000 / 1,671 / 1,107 \\
+\bottomrule
+\multicolumn{5}{l}{\footnotesize $^{a}$ Share of the full English corpus (Reddit 6,655; Telegram 1,610).}
+\end{tabular}
+\end{table}

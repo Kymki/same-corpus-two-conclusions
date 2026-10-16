@@ -1,0 +1,36 @@
+design,k,leader,cos,runner_up,lead,separated,js_leader,js_agrees
+Asymmetric filter (original),5,Guardian-Telegram,0.7582,Guardian-Reddit,0.034,False,Guardian-Telegram,True
+Asymmetric filter (original),7,Guardian-Telegram,0.7437,Guardian-Reddit,0.099,True,Guardian-Telegram,True
+Asymmetric filter (original),10,Guardian-Telegram,0.7224,Guardian-Reddit,0.052,False,Guardian-Telegram,True
+Asymmetric filter (original),15,Guardian-Telegram,0.7555,Reddit-Telegram,0.275,True,Guardian-Telegram,True
+Asymmetric filter (original),21,Reddit-Telegram,0.6538,Guardian-Telegram,0.241,True,Reddit-Telegram,True
+Symmetric filter,5,Guardian-Telegram,0.7635,Reddit-Telegram,0.007,False,Reddit-Telegram,False
+Symmetric filter,7,Reddit-Telegram,0.9667,Guardian-Telegram,0.54,True,Reddit-Telegram,True
+Symmetric filter,10,Reddit-Telegram,0.9628,Guardian-Telegram,0.564,True,Reddit-Telegram,True
+Symmetric filter,15,Reddit-Telegram,0.9458,Guardian-Telegram,0.56,True,Reddit-Telegram,True
+Symmetric filter,21,Reddit-Telegram,0.7533,Guardian-Telegram,0.332,True,Reddit-Telegram,True
+A_len15_symfilter,5,Reddit-Telegram,0.8095,Guardian-Reddit,0.012,False,Guardian-Reddit,False
+A_len15_symfilter,7,Guardian-Reddit,0.8651,Reddit-Telegram,0.082,True,Guardian-Reddit,True
+A_len15_symfilter,10,Guardian-Telegram,0.8567,Reddit-Telegram,0.039,False,Guardian-Telegram,True
+A_len15_symfilter,15,Reddit-Telegram,0.857,Guardian-Reddit,0.035,False,Reddit-Telegram,True
+A_len15_symfilter,21,Guardian-Reddit,0.8775,Reddit-Telegram,0.072,False,Guardian-Reddit,True
+B_len15_nofilter,5,Guardian-Telegram,0.9442,Guardian-Reddit,0.187,True,Guardian-Telegram,True
+B_len15_nofilter,7,Guardian-Telegram,0.819,Guardian-Reddit,0.027,False,Guardian-Telegram,True
+B_len15_nofilter,10,Guardian-Reddit,0.864,Guardian-Telegram,0.032,False,Guardian-Reddit,True
+B_len15_nofilter,15,Guardian-Reddit,0.8647,Reddit-Telegram,0.044,False,Guardian-Reddit,True
+B_len15_nofilter,21,Guardian-Reddit,0.8454,Reddit-Telegram,0.034,False,Guardian-Reddit,True
+C_len25_symfilter,5,Guardian-Reddit,0.84,Reddit-Telegram,0.089,False,Guardian-Reddit,True
+C_len25_symfilter,7,Guardian-Reddit,0.8777,Reddit-Telegram,0.029,False,Guardian-Reddit,True
+C_len25_symfilter,10,Guardian-Reddit,0.7931,Reddit-Telegram,0.06,False,Guardian-Reddit,True
+C_len25_symfilter,15,Guardian-Reddit,0.7721,Reddit-Telegram,0.008,False,Guardian-Reddit,True
+C_len25_symfilter,21,Reddit-Telegram,0.8032,Guardian-Reddit,0.011,False,Reddit-Telegram,True
+Chunked-balanced C=10,5,Reddit-Telegram,0.9753,Guardian-Reddit,0.066,True,Reddit-Telegram,True
+Chunked-balanced C=10,7,Reddit-Telegram,0.8874,Guardian-Reddit,0.041,True,Reddit-Telegram,True
+Chunked-balanced C=10,10,Reddit-Telegram,0.8779,Guardian-Reddit,0.031,False,Reddit-Telegram,True
+Chunked-balanced C=10,15,Guardian-Reddit,0.842,Reddit-Telegram,0.012,False,Reddit-Telegram,False
+Chunked-balanced C=10,21,Reddit-Telegram,0.8523,Guardian-Reddit,0.034,False,Reddit-Telegram,True
+Chunked-balanced C=20,5,Reddit-Telegram,0.9264,Guardian-Reddit,0.222,True,Reddit-Telegram,True
+Chunked-balanced C=20,7,Reddit-Telegram,0.9401,Guardian-Telegram,0.215,True,Reddit-Telegram,True
+Chunked-balanced C=20,10,Reddit-Telegram,0.8013,Guardian-Telegram,0.106,True,Reddit-Telegram,True
+Chunked-balanced C=20,15,Reddit-Telegram,0.8672,Guardian-Telegram,0.139,True,Reddit-Telegram,True
+Chunked-balanced C=20,21,Guardian-Telegram,0.7272,Reddit-Telegram,0.036,False,Reddit-Telegram,False

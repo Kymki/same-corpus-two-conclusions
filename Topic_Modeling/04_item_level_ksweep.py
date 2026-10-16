@@ -43,6 +43,7 @@ from scipy.spatial.distance import jensenshannon
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import DATA_PROCESSED, DATA_RESULTS
+from item_order import canonical_order
 
 INPUT_CSV = os.path.join(DATA_PROCESSED, "dati_testuali_preproc_consolidati.csv")
 SENTIMENT_CSV = os.path.join(DATA_RESULTS, "sentiment_results_multilingua.csv")
@@ -72,6 +73,7 @@ def build_items():
         n_sentences=('id_originale', 'count'),
         testo_lemmatizzato=('testo_lemmatizzato', ' '.join),
     ).reset_index()
+    items = canonical_order(items)
     print(f"  {len(df)} sentences -> {len(items)} items")
     print(items.groupby('fonte')['parent'].count().to_string())
 

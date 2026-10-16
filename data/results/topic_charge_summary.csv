@@ -1,0 +1,49 @@
+k,variant,effect,repetitions,estimable,negative,negative_ci_excl_zero,positive,positive_ci_excl_zero,estimate_median,estimate_min,estimate_max
+10,ALT_PROCESS,did_vs_guardian,22,22,22,19,0,0,-2.7,-5.08,-1.33
+10,ALT_PROCESS,did_vs_reddit,22,22,22,20,0,0,-4.72,-8.35,-1.16
+10,ALT_PROCESS,within_channel:Clash Report,22,21,0,0,21,14,5.74,1.35,11.68
+10,ALT_PROCESS,within_channel:Slavyangrad,22,22,22,2,0,0,-2.1,-3.71,-0.42
+10,ALT_PROCESS,within_channel:WarTranslated,22,22,22,21,0,0,-5.94,-7.37,-2.78
+10,ALT_PROCESS,within_telegram,22,22,22,19,0,0,-2.74,-4.59,-0.29
+10,ALT_TOP5,did_vs_guardian,22,22,22,22,0,0,-3.7,-5.7,-2.35
+10,ALT_TOP5,did_vs_reddit,22,22,22,21,0,0,-5.03,-8.95,-2.41
+10,ALT_TOP5,within_channel:Clash Report,22,21,0,0,21,14,5.55,1.77,11.07
+10,ALT_TOP5,within_channel:Slavyangrad,22,22,22,1,0,0,-2.26,-4.8,-0.29
+10,ALT_TOP5,within_channel:WarTranslated,22,22,22,21,0,0,-6.36,-7.38,-1.76
+10,ALT_TOP5,within_telegram,22,22,22,20,0,0,-3.13,-4.88,-0.51
+10,POSTHOC_KINETIC,did_vs_guardian,22,22,22,16,0,0,-2.78,-5.13,-1.33
+10,POSTHOC_KINETIC,did_vs_reddit,22,22,22,19,0,0,-4.58,-8.35,-0.98
+10,POSTHOC_KINETIC,within_channel:Clash Report,22,21,0,0,21,12,5.06,2.22,11.68
+10,POSTHOC_KINETIC,within_channel:Slavyangrad,22,22,22,1,0,0,-2.04,-3.74,-0.16
+10,POSTHOC_KINETIC,within_channel:WarTranslated,22,22,22,21,0,0,-5.94,-7.53,-2.78
+10,POSTHOC_KINETIC,within_telegram,22,22,22,19,0,0,-3.02,-4.53,-0.29
+10,main,did_vs_guardian,22,22,22,19,0,0,-3.03,-5.08,-1.33
+10,main,did_vs_reddit,22,22,22,20,0,0,-4.82,-8.35,-1.16
+10,main,within_channel:Clash Report,22,21,0,0,21,14,5.74,1.35,11.68
+10,main,within_channel:Slavyangrad,22,22,22,2,0,0,-2.16,-3.71,-0.29
+10,main,within_channel:WarTranslated,22,22,22,21,0,0,-5.96,-7.37,-2.78
+10,main,within_telegram,22,22,22,19,0,0,-2.89,-4.59,-0.29
+21,ALT_PROCESS,did_vs_guardian,22,22,22,17,0,0,-2.84,-5.56,-0.91
+21,ALT_PROCESS,did_vs_reddit,22,22,22,19,0,0,-5.36,-8.3,-1.54
+21,ALT_PROCESS,within_channel:Clash Report,22,21,0,0,21,10,4.62,1.51,7.98
+21,ALT_PROCESS,within_channel:Slavyangrad,22,22,18,0,4,0,-1.32,-2.97,0.66
+21,ALT_PROCESS,within_channel:WarTranslated,22,22,22,21,0,0,-4.89,-6.99,-2.38
+21,ALT_PROCESS,within_telegram,22,22,22,17,0,0,-2.48,-3.44,-0.71
+21,ALT_TOP5,did_vs_guardian,22,22,22,20,0,0,-3.36,-5.42,-1.69
+21,ALT_TOP5,did_vs_reddit,22,22,21,20,1,0,-6.02,-8.09,0.39
+21,ALT_TOP5,within_channel:Clash Report,22,20,0,0,20,8,4.53,2.24,8.39
+21,ALT_TOP5,within_channel:Slavyangrad,22,22,19,0,3,0,-1.98,-3.49,0.89
+21,ALT_TOP5,within_channel:WarTranslated,22,22,22,19,0,0,-4.9,-7.41,-1.8
+21,ALT_TOP5,within_telegram,22,22,22,17,0,0,-2.72,-4.02,-0.27
+21,POSTHOC_KINETIC,did_vs_guardian,22,22,22,16,0,0,-2.74,-4.91,-0.77
+21,POSTHOC_KINETIC,did_vs_reddit,22,22,22,18,0,0,-5.46,-8.0,-0.42
+21,POSTHOC_KINETIC,within_channel:Clash Report,22,22,0,0,22,10,4.35,1.61,7.98
+21,POSTHOC_KINETIC,within_channel:Slavyangrad,22,22,20,1,2,0,-1.51,-3.57,0.68
+21,POSTHOC_KINETIC,within_channel:WarTranslated,22,22,22,21,0,0,-5.43,-8.88,-2.38
+21,POSTHOC_KINETIC,within_telegram,22,22,22,18,0,0,-2.48,-5.53,-0.71
+21,main,did_vs_guardian,22,22,22,18,0,0,-2.94,-5.56,-1.19
+21,main,did_vs_reddit,22,22,22,20,0,0,-5.88,-8.3,-1.75
+21,main,within_channel:Clash Report,22,22,0,0,22,10,4.54,1.15,7.98
+21,main,within_channel:Slavyangrad,22,22,18,0,4,0,-1.32,-3.2,0.66
+21,main,within_channel:WarTranslated,22,22,22,21,0,0,-4.89,-6.99,-2.38
+21,main,within_telegram,22,22,22,17,0,0,-2.54,-3.75,-0.71

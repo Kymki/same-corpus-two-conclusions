@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: >-
+  If you use the code or the derived tables in this repository, please cite the
+  article and the archived release.
+title: "The Same Corpus, Two Conclusions: replication package"
+type: software
+authors:
+  - family-names: Laquintana
+    given-names: Mirko
+  - family-names: Pareschi
+    given-names: Remo
+repository-code: "https://github.com/Kymki/same-corpus-two-conclusions"
+license:
+  - MIT
+  - CC-BY-4.0
+abstract: >-
+  Replication package for "The Same Corpus, Two Conclusions: How Analyst Choices
+  Determine Cross-Platform Findings". The paper shows that three routine analyst
+  choices (the unit of analysis, the summary measure, and the criterion delimiting
+  each subcorpus) can each determine the substantive conclusion drawn about
+  platforms. Code is released under the MIT Licence; documentation and derived data
+  tables under CC BY 4.0. The raw corpora are not included.
+keywords:
+  - topic modelling
+  - LDA
+  - sentiment analysis
+  - cross-platform comparison
+  - Reddit
+  - Telegram
+  - The Guardian
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "The Same Corpus, Two Conclusions: How Analyst Choices Determine Cross-Platform Findings"
+  authors:
+    - family-names: Laquintana
+      given-names: Mirko
+    - family-names: Pareschi
+      given-names: Remo
+  journal: Information
+  year: 2026

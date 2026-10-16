@@ -37,6 +37,7 @@ from gensim.models import LdaMulticore
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import DATA_PROCESSED, DATA_RESULTS
+from item_order import canonical_order
 
 INPUT_CSV = os.path.join(DATA_PROCESSED, "dati_testuali_preproc_consolidati.csv")
 OUT = os.path.join(DATA_RESULTS, "length_confound_diagnostic.csv")
@@ -57,6 +58,7 @@ def main():
         lem=('testo_lemmatizzato', ' '.join),
         clean=('testo_pulito_base', lambda s: ' '.join(map(str, s))),
     ).reset_index()
+    items = canonical_order(items)
 
     # token mass per source (why LDA topics are Guardian's topics)
     items['n_words'] = items['lem'].str.split().str.len()

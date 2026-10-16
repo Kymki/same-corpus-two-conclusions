@@ -30,6 +30,7 @@ from gensim.models import LdaMulticore
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import DATA_PROCESSED, DATA_RESULTS
+from item_order import canonical_order
 
 CORPUS = os.path.join(DATA_PROCESSED, "dati_testuali_preproc_consolidati.csv")
 ITEMS_META = os.path.join(DATA_RESULTS, "items_en_meta.csv")
@@ -72,6 +73,7 @@ def main():
         lem=('testo_lemmatizzato', ' '.join),
         clean=('testo_pulito_base', lambda s: ' '.join(map(str, s))),
     ).reset_index()
+    items = canonical_order(items)
     items = items[items['clean'].str.lower().apply(lambda t: any(k in t for k in WAR_KW))].copy()
     print(f"\nItems in the symmetric subset: {len(items)}")
     print(items.groupby('fonte').size().rename(index=NAMES).to_string())

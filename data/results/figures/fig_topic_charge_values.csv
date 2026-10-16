@@ -1,37 +1,202 @@
-topic,top_terms,platform,n_items,charge_mean,charge_lo,charge_hi,panel,k,category
-0,"drone, russian, russia, ukrainian, strike",Guardian,53,66.54,64.7,68.48,a,10,
-0,"drone, russian, russia, ukrainian, strike",Reddit,1868,73.0,72.32,73.73,a,10,
-0,"drone, russian, russia, ukrainian, strike",Telegram,586,66.72,65.51,68.01,a,10,
-1,"say, russian, russia, ukrainian, zelenskyy",Guardian,410,68.7,68.19,69.22,a,10,
-1,"say, russian, russia, ukrainian, zelenskyy",Reddit,166,72.57,69.87,75.07,a,10,
-1,"say, russian, russia, ukrainian, zelenskyy",Telegram,158,63.75,61.05,66.52,a,10,
-2,"say, oil, price, energy, war",Guardian,204,65.34,64.54,66.13,a,10,
-2,"say, oil, price, energy, war",Reddit,125,70.42,67.76,73.1,a,10,
-2,"say, oil, price, energy, war",Telegram,43,64.2,60.14,68.15,a,10,
-3,"say, russia, minister, european, russian",Guardian,165,66.31,65.59,67.07,a,10,
-3,"say, russia, minister, european, russian",Reddit,167,71.35,69.19,73.61,a,10,
-3,"say, russia, minister, european, russian",Telegram,142,60.95,58.61,63.53,a,10,
-4,"trump, say, new, president, government",Guardian,180,68.77,68.07,69.49,a,10,
-4,"trump, say, new, president, government",Reddit,63,69.83,65.39,74.28,a,10,
-5,"war, country, iran, nuclear, china",Guardian,149,71.28,70.34,72.22,a,10,
-5,"war, country, iran, nuclear, china",Reddit,220,78.21,76.6,79.76,a,10,
-5,"war, country, iran, nuclear, china",Telegram,41,68.06,65.05,70.89,a,10,
-6,"say, not, year, people, time",Guardian,275,65.28,64.6,66.02,a,10,
-6,"say, not, year, people, time",Reddit,433,75.26,73.81,76.73,a,10,
-6,"say, not, year, people, time",Telegram,45,67.54,63.56,71.55,a,10,
-8,"orbán, hungary, say, election, hungarian",Guardian,75,70.94,69.7,72.18,a,10,
-8,"orbán, hungary, say, election, hungarian",Reddit,62,74.23,70.23,78.16,a,10,
-9,"trump, say, europe, european, greenland",Guardian,235,71.25,70.44,72.02,a,10,
-9,"trump, say, europe, european, greenland",Reddit,187,75.13,73.37,76.91,a,10,
-9,"trump, say, europe, european, greenland",Telegram,55,67.87,64.86,70.84,a,10,
-2,"say, european, russia, minister, war",Telegram,64,58.74,55.46,61.76,b,21,Diplomatic/institutional
-3,"china, say, russia, chinese, beijing",Telegram,56,59.35,55.56,62.89,b,21,Diplomatic/institutional
-1,"say, russian, russia, ukrainian, zelenskyy",Telegram,112,62.84,59.96,65.87,b,21,Diplomatic/institutional
-10,"say, minister, poland, report, russian",Telegram,45,63.47,58.4,68.23,b,21,Diplomatic/institutional
-19,"missile, strike, drone, russian, attack",Telegram,277,64.34,62.58,66.17,b,21,Kinetic
-14,"oil, energy, price, say, gas",Telegram,35,64.76,59.48,69.71,b,21,Other
-6,"say, not, people, year, like",Telegram,38,68.06,63.73,72.44,b,21,Other
-0,"drone, russian, russia, ukrainian, not",Telegram,231,68.19,66.28,70.21,b,21,Kinetic
-20,"oil, russian, sanction, russia, india",Telegram,30,69.09,65.48,72.68,b,21,Other
-17,"trump, say, europe, war, european",Telegram,77,69.69,67.55,71.84,b,21,Other
-7,"drone, village, russian, attack, damage",Telegram,50,73.64,69.58,77.67,b,21,Kinetic
+topic,top_terms,platform,n_items,charge_mean,charge_lo,charge_hi,panel,k,source_file,source_sha256_12,row,order,seed,estimate,ci_lo,ci_hi,n_telegram_dip,n_telegram_kin,is_canonical_run,plotted
+0.0,"drone, russian, russia, ukrainian, strike",Guardian,53.0,66.54,64.7,68.48,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+0.0,"drone, russian, russia, ukrainian, strike",Reddit,1868.0,73.0,72.32,73.73,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+0.0,"drone, russian, russia, ukrainian, strike",Telegram,586.0,66.72,65.51,68.01,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+1.0,"say, russian, russia, ukrainian, zelenskyy",Guardian,410.0,68.7,68.19,69.22,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+1.0,"say, russian, russia, ukrainian, zelenskyy",Reddit,166.0,72.57,69.87,75.07,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+1.0,"say, russian, russia, ukrainian, zelenskyy",Telegram,158.0,63.75,61.05,66.52,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+2.0,"say, oil, price, energy, war",Guardian,204.0,65.34,64.54,66.13,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+2.0,"say, oil, price, energy, war",Reddit,125.0,70.42,67.76,73.1,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+2.0,"say, oil, price, energy, war",Telegram,43.0,64.2,60.14,68.15,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+3.0,"say, russia, minister, european, russian",Guardian,165.0,66.31,65.59,67.07,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+3.0,"say, russia, minister, european, russian",Reddit,167.0,71.35,69.19,73.61,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+3.0,"say, russia, minister, european, russian",Telegram,142.0,60.95,58.61,63.53,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+4.0,"trump, say, new, president, government",Guardian,180.0,68.77,68.07,69.49,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+4.0,"trump, say, new, president, government",Reddit,63.0,69.83,65.39,74.28,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+5.0,"war, country, iran, nuclear, china",Guardian,149.0,71.28,70.34,72.22,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+5.0,"war, country, iran, nuclear, china",Reddit,220.0,78.21,76.6,79.76,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+5.0,"war, country, iran, nuclear, china",Telegram,41.0,68.06,65.05,70.89,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+6.0,"say, not, year, people, time",Guardian,275.0,65.28,64.6,66.02,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+6.0,"say, not, year, people, time",Reddit,433.0,75.26,73.81,76.73,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+6.0,"say, not, year, people, time",Telegram,45.0,67.54,63.56,71.55,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+8.0,"orbán, hungary, say, election, hungarian",Guardian,75.0,70.94,69.7,72.18,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+8.0,"orbán, hungary, say, election, hungarian",Reddit,62.0,74.23,70.23,78.16,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+9.0,"trump, say, europe, european, greenland",Guardian,235.0,71.25,70.44,72.02,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+9.0,"trump, say, europe, european, greenland",Reddit,187.0,75.13,73.37,76.91,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+9.0,"trump, say, europe, european, greenland",Telegram,55.0,67.87,64.86,70.84,a,10,symfilter_continuous_by_topic_platform_k10.csv,c9ef25cd6682,,,,,,,,,,
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",0.0,100.0,-2.73,-4.35,-0.99,472.0,586.0,True,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,0.0,100.0,-5.98,-8.6,-3.41,215.0,377.0,True,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,0.0,100.0,-1.23,-4.57,1.98,137.0,166.0,True,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,0.0,100.0,8.19,2.94,13.42,110.0,35.0,True,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",0.0,100.0,-2.78,-4.42,-1.14,454.0,574.0,True,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,0.0,100.0,-4.59,-7.31,-2.03,218.0,355.0,True,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,0.0,100.0,-2.35,-5.56,1.02,123.0,175.0,True,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,0.0,100.0,4.38,-0.66,9.11,105.0,38.0,True,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",0.0,200.0,-3.15,-4.68,-1.43,415.0,680.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,0.0,200.0,-6.36,-9.27,-3.72,181.0,431.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,0.0,200.0,-1.47,-4.73,1.87,122.0,194.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,0.0,200.0,4.83,-0.65,10.04,101.0,46.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",0.0,200.0,-2.85,-4.55,-1.07,423.0,630.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,0.0,200.0,-4.91,-7.89,-2.25,183.0,407.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,0.0,200.0,-2.27,-5.66,0.84,122.0,180.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,0.0,200.0,3.48,-1.75,8.58,108.0,35.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",1.0,100.0,-2.61,-4.27,-0.52,416.0,645.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,1.0,100.0,-5.38,-8.07,-2.4,179.0,416.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,1.0,100.0,-2.58,-6.14,0.84,123.0,179.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,1.0,100.0,8.24,3.49,13.52,104.0,43.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",1.0,100.0,-3.44,-5.26,-1.27,349.0,649.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,1.0,100.0,-6.99,-9.96,-3.81,148.0,406.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,1.0,100.0,-2.97,-6.45,0.13,96.0,187.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,1.0,100.0,6.9,2.43,12.13,97.0,49.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",1.0,200.0,-0.29,-2.38,1.9,251.0,330.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,1.0,200.0,-2.78,-6.47,0.99,77.0,204.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,1.0,200.0,-0.42,-4.1,2.79,84.0,102.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,1.0,200.0,11.68,4.69,19.62,84.0,18.0,False,False
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",1.0,200.0,-2.8,-4.82,-0.52,472.0,557.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,1.0,200.0,-5.67,-8.45,-3.05,209.0,372.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,1.0,200.0,0.15,-3.46,3.12,148.0,137.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,1.0,200.0,2.94,-2.14,8.96,105.0,41.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",2.0,100.0,-1.86,-3.96,0.29,298.0,669.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,2.0,100.0,-4.62,-8.16,-0.73,98.0,427.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,2.0,100.0,-2.42,-5.7,1.07,96.0,181.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,2.0,100.0,4.16,-0.38,8.57,94.0,54.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",2.0,100.0,-2.21,-4.25,-0.28,382.0,642.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,2.0,100.0,-4.18,-6.76,-1.48,194.0,375.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,2.0,100.0,-2.75,-6.76,0.99,90.0,208.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,2.0,100.0,5.91,1.68,10.54,91.0,49.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",2.0,200.0,-2.97,-4.87,-0.82,345.0,677.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,2.0,200.0,-7.06,-10.05,-3.94,150.0,432.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,2.0,200.0,-0.29,-3.68,3.15,103.0,188.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,2.0,200.0,6.0,1.43,11.07,88.0,48.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",2.0,200.0,-1.73,-3.72,0.29,307.0,754.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,2.0,200.0,-3.81,-6.99,-0.34,127.0,472.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,2.0,200.0,-1.29,-4.52,2.03,95.0,214.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,2.0,200.0,5.12,0.7,9.67,77.0,60.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",3.0,100.0,-3.21,-5.02,-1.4,352.0,689.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,3.0,100.0,-6.81,-9.95,-3.73,141.0,440.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,3.0,100.0,-2.61,-5.68,0.93,103.0,193.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,3.0,100.0,6.04,0.86,10.95,100.0,48.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",3.0,100.0,-3.63,-5.63,-1.82,356.0,528.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,3.0,100.0,-6.85,-9.66,-3.88,167.0,340.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,3.0,100.0,-0.49,-4.02,3.4,103.0,153.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,3.0,100.0,3.58,-2.3,9.64,78.0,30.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",3.0,200.0,-3.34,-5.55,-1.28,284.0,733.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,3.0,200.0,-6.57,-10.0,-2.82,113.0,458.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,3.0,200.0,-2.38,-5.91,1.01,82.0,210.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,3.0,200.0,4.42,0.07,9.42,84.0,55.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",3.0,200.0,-1.53,-3.4,0.26,440.0,612.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,3.0,200.0,-3.71,-6.3,-0.84,195.0,392.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,3.0,200.0,-0.77,-3.93,2.53,131.0,172.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,3.0,200.0,6.04,1.5,11.06,103.0,41.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",4.0,100.0,-2.45,-4.26,-0.47,366.0,636.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,4.0,100.0,-5.48,-8.0,-2.29,158.0,407.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,4.0,100.0,-1.6,-5.17,1.64,111.0,176.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,4.0,100.0,6.65,1.8,11.82,90.0,44.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",4.0,100.0,-3.01,-4.77,-0.94,336.0,617.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,4.0,100.0,-6.36,-9.35,-3.02,131.0,390.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,4.0,100.0,-1.34,-4.88,2.18,112.0,178.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,4.0,100.0,3.35,-1.9,9.27,86.0,42.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",4.0,200.0,-2.04,-3.79,-0.31,465.0,595.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,4.0,200.0,-4.25,-6.62,-1.28,228.0,363.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,4.0,200.0,-2.04,-5.38,1.3,123.0,182.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,4.0,200.0,8.02,3.42,12.89,103.0,42.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",4.0,200.0,-0.71,-2.65,1.15,452.0,541.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,4.0,200.0,-2.38,-5.07,0.81,236.0,334.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,4.0,200.0,-0.33,-3.87,2.94,123.0,160.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,4.0,200.0,7.98,3.05,13.1,84.0,38.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",5.0,100.0,-3.59,-5.21,-1.82,393.0,705.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,5.0,100.0,-5.94,-8.81,-3.39,160.0,455.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,5.0,100.0,-2.92,-6.53,0.11,122.0,192.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,5.0,100.0,2.84,-2.65,8.05,100.0,49.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",5.0,100.0,-3.75,-5.73,-1.72,347.0,510.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,5.0,100.0,-5.49,-8.8,-2.48,150.0,323.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,5.0,100.0,-3.2,-7.08,0.44,96.0,145.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,5.0,100.0,1.15,-4.3,6.5,92.0,35.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",5.0,200.0,-3.26,-4.96,-1.57,400.0,672.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,5.0,200.0,-6.75,-9.57,-4.02,174.0,424.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,5.0,200.0,-1.45,-4.89,1.73,118.0,193.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,5.0,200.0,5.76,0.97,10.65,100.0,44.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",5.0,200.0,-2.49,-4.39,-0.79,373.0,598.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,5.0,200.0,-5.74,-8.66,-3.1,163.0,381.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,5.0,200.0,-1.26,-4.84,2.16,107.0,174.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,5.0,200.0,7.28,1.88,12.74,97.0,36.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",6.0,100.0,-2.85,-4.9,-0.96,394.0,615.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,6.0,100.0,-6.07,-9.17,-3.16,171.0,406.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,6.0,100.0,-1.01,-4.55,2.48,117.0,173.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,6.0,100.0,5.61,-0.85,12.5,100.0,31.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",6.0,100.0,-1.89,-3.78,-0.02,344.0,677.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,6.0,100.0,-5.62,-8.69,-2.58,145.0,424.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,6.0,100.0,-0.38,-3.93,3.09,99.0,196.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,6.0,100.0,6.66,1.55,11.64,92.0,49.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",6.0,200.0,-3.56,-5.72,-1.36,301.0,651.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,6.0,200.0,-6.82,-10.22,-3.83,142.0,412.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,6.0,200.0,-2.27,-5.91,1.24,88.0,187.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,6.0,200.0,6.48,1.67,12.29,68.0,46.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",6.0,200.0,-3.37,-5.24,-1.48,420.0,634.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,6.0,200.0,-6.09,-9.08,-3.31,186.0,411.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,6.0,200.0,-1.4,-4.87,1.75,131.0,172.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,6.0,200.0,3.66,-0.92,9.17,96.0,43.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",7.0,100.0,-2.85,-4.91,-1.0,327.0,704.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,7.0,100.0,-5.43,-8.62,-2.57,145.0,439.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,7.0,100.0,-2.17,-5.61,1.18,89.0,206.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,7.0,100.0,4.86,0.67,9.75,85.0,50.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",7.0,100.0,-2.92,-5.11,-0.83,308.0,573.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,7.0,100.0,-4.75,-8.32,-1.4,136.0,375.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,7.0,100.0,-2.74,-6.51,1.27,89.0,157.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,7.0,100.0,4.49,-1.78,10.33,79.0,34.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",7.0,200.0,-1.51,-3.27,0.38,440.0,646.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,7.0,200.0,-3.7,-6.54,-1.0,196.0,405.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,7.0,200.0,-0.68,-3.92,2.24,127.0,185.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,7.0,200.0,5.87,1.23,10.87,105.0,47.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",7.0,200.0,-1.68,-3.66,0.07,387.0,604.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,7.0,200.0,-4.87,-7.75,-1.98,179.0,377.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,7.0,200.0,0.66,-2.75,4.0,107.0,175.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,7.0,200.0,6.94,2.1,12.3,93.0,43.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",8.0,100.0,-3.29,-5.26,-1.46,312.0,700.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,8.0,100.0,-6.11,-9.6,-2.9,133.0,436.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,8.0,100.0,-3.55,-6.9,-0.23,90.0,205.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,8.0,100.0,5.71,0.96,10.7,83.0,50.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",8.0,100.0,-1.38,-3.23,0.6,348.0,500.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,8.0,100.0,-4.69,-8.04,-1.35,144.0,323.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,8.0,100.0,0.1,-3.18,3.31,117.0,141.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,8.0,100.0,7.59,2.15,12.89,81.0,32.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",8.0,200.0,-2.65,-4.68,-0.87,315.0,690.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,8.0,200.0,-5.77,-9.54,-2.61,116.0,431.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,8.0,200.0,-2.14,-5.06,0.98,100.0,193.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,8.0,200.0,3.44,-0.95,8.43,90.0,57.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",8.0,200.0,-2.02,-4.01,-0.1,387.0,628.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,8.0,200.0,-4.36,-7.36,-1.19,168.0,404.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,8.0,200.0,-1.3,-4.29,1.84,120.0,174.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,8.0,200.0,6.13,1.2,11.1,92.0,45.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",9.0,100.0,-4.59,-6.64,-2.75,345.0,675.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,9.0,100.0,-6.78,-9.92,-3.45,140.0,451.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,9.0,100.0,-3.71,-6.9,-0.37,113.0,180.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,9.0,100.0,1.35,-4.26,7.18,87.0,37.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",9.0,100.0,-2.46,-4.52,-0.14,315.0,647.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,9.0,100.0,-5.54,-8.68,-2.6,145.0,412.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,9.0,100.0,0.48,-3.53,3.7,95.0,180.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,9.0,100.0,4.24,-1.14,9.3,68.0,47.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",9.0,200.0,-2.93,-4.84,-0.89,393.0,661.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,9.0,200.0,-5.8,-8.81,-3.08,169.0,414.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,9.0,200.0,-2.19,-5.47,0.91,114.0,191.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,9.0,200.0,5.6,1.07,10.4,102.0,47.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",9.0,200.0,-3.41,-5.18,-1.63,416.0,620.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,9.0,200.0,-6.13,-9.17,-3.33,170.0,411.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,9.0,200.0,-2.62,-5.65,0.58,131.0,166.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,9.0,200.0,4.58,-0.76,10.0,102.0,37.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",10.0,100.0,-2.41,-4.23,-0.58,382.0,671.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,10.0,100.0,-5.93,-8.86,-3.0,163.0,427.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,10.0,100.0,-0.83,-4.15,2.54,107.0,193.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,10.0,100.0,6.32,1.68,11.29,103.0,44.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",10.0,100.0,-2.36,-4.16,-0.58,441.0,595.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,10.0,100.0,-4.28,-7.12,-1.62,193.0,381.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,10.0,100.0,-1.37,-4.65,2.14,131.0,173.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,10.0,100.0,4.07,-0.59,9.87,107.0,34.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",10.0,200.0,-3.69,-5.75,-1.94,341.0,729.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,10.0,200.0,-7.37,-10.49,-4.33,142.0,449.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,10.0,200.0,-2.92,-5.97,0.9,95.0,216.0,False,True
+,,,,,,,b,10,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,10.0,200.0,4.19,-0.45,8.83,95.0,56.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,"Telegram, pooled",10.0,200.0,-2.58,-4.39,-0.84,432.0,553.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,WarTranslated,10.0,200.0,-3.98,-7.06,-1.1,208.0,358.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Slavyangrad,10.0,200.0,-2.24,-5.46,1.68,119.0,154.0,False,True
+,,,,,,,b,21,topic_charge_repetitions_effects.csv,6badf5202b06,Clash Report,10.0,200.0,1.99,-3.77,7.67,97.0,33.0,False,True

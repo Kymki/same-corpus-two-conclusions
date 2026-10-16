@@ -1,0 +1,19 @@
+check,run,pair,cosine
+published,0,Guardian-Reddit,0.3365
+published,0,Guardian-Telegram,0.3983
+published,0,Reddit-Telegram,0.9628
+canonical order,1,Guardian-Reddit,0.3365
+canonical order,1,Guardian-Telegram,0.3983
+canonical order,1,Reddit-Telegram,0.9628
+canonical order,2,Guardian-Reddit,0.3365
+canonical order,2,Guardian-Telegram,0.3983
+canonical order,2,Reddit-Telegram,0.9628
+document order,1,Guardian-Reddit,0.6333
+document order,1,Guardian-Telegram,0.5505
+document order,1,Reddit-Telegram,0.8976
+document order,2,Guardian-Reddit,0.5302
+document order,2,Guardian-Telegram,0.4498
+document order,2,Reddit-Telegram,0.9014
+document order,3,Guardian-Reddit,0.7108
+document order,3,Guardian-Telegram,0.6713
+document order,3,Reddit-Telegram,0.7086

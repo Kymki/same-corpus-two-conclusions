@@ -122,6 +122,11 @@ def process_chunk(chunk_df):
     return results
 
 if __name__ == "__main__":
+    # --all-guardian (triage 2.3): skip the Guardian-only relevance filter below, so
+    # every retrieved Guardian article enters the corpus and the one-keyword rule can be
+    # applied to all sources alike downstream (Topic_Modeling/16_symfilter_all_guardian.py).
+    # Every other step is unchanged; the output goes to a separate file.
+    ALL_GUARDIAN = "--all-guardian" in sys.argv
     os.makedirs(DATA_PROCESSED, exist_ok=True)
     
     raw_files = {
@@ -189,7 +194,7 @@ if __name__ == "__main__":
         #   - a war keyword appears in the TITLE (covers dedicated war live-blogs), or
         #   - it is a regular article (not a multi-topic /live/ blog) with >= 3
         #     war-keyword occurrences in the body.
-        if source_name == 'Guardian':
+        if source_name == 'Guardian' and not ALL_GUARDIAN:
             WAR_KW = ['ukrain', 'russia', 'putin', 'zelensk', 'kyiv', 'kremlin', 'moscow',
                       'donbas', 'crimea', 'kharkiv', 'kherson', 'mariupol', 'bakhmut', 'nato']
             def kw_count(t):
@@ -253,7 +258,8 @@ if __name__ == "__main__":
     print(f"Total sentences after deduplication (spam/echo removal): {len(df_final)}")
     print(df_final.groupby('fonte').size())
 
-    output_path = os.path.join(DATA_PROCESSED, "dati_testuali_preproc_consolidati.csv")
+    output_path = os.path.join(DATA_PROCESSED, "dati_testuali_preproc_allguardian.csv" if ALL_GUARDIAN
+                               else "dati_testuali_preproc_consolidati.csv")
     df_final.to_csv(output_path, index=False)
     print(f"\n--- Robust Preprocessing Completed ---")
     print(f"Output saved to: {output_path}")

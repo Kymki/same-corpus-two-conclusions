@@ -151,6 +151,48 @@ anything.
 
 ---
 
+## Added in the revision
+
+**Document order.** LDA in gensim is sensitive to the order of the documents, so the
+order is part of the analysis. `item_order.py` fixes it from
+`data/results/item_order_manifest.csv`, the order used for the submitted results.
+Every topic-model script on the analysed corpus applies it, including those added in
+the revision. Where the items go beyond that corpus (script 16, all 3,000 Guardian
+articles), they are ordered by the SHA-256 of source and lemmatised text instead, which
+needs no identifiers. `LdaMulticore` is not bit-for-bit deterministic (parallel
+reduction): in our checks, re-runs differed by up to about 0.015 in cosine.
+`Topic_Modeling/verify_lda_order.py` runs the three checks behind these statements
+(`verify_lda_order.csv`).
+
+**Section 4.8 was re-tested blind.** The protocol, its timeline, the hashes and what was
+seen before the opening are in [`BLIND_PROTOCOL.md`](BLIND_PROTOCOL.md).
+
+| Script | Output (`data/results/`) | What it does |
+|---|---|---|
+| `Topic_Modeling/10_chunked_rebalanced_ksweep.py` | `chunked_rebalanced_ksweep_similarity.csv` | chunked design, training capped at the smallest platform |
+| `Topic_Modeling/11_bertopic_symmetric_ksweep.py` | `bertopic_symfilter_*.csv` | BERTopic on the symmetric subset |
+| `Topic_Modeling/12_length_designs_table.py` | `table_2_1.tex`, `table_2_1_summary.csv`, `design_costs.csv` | the similarity designs side by side, and what each costs |
+| `Topic_Modeling/13_order_seed_repetitions.py` | `repetitions_*.csv` | 22 solutions per k (11 document orders × 2 seeds), k up to 30 |
+| `Topic_Modeling/14_topic_charge_repetitions.py`, `15_topic_charge_summary.py`, `topic_category_rule.py` | `topic_charge_*.csv`, `topic_category_agreement.csv` | Section 4.8 on the same 22 solutions; see `BLIND_PROTOCOL.md` |
+| `Topic_Modeling/16_symfilter_all_guardian.py` (with `Lemmatization/01_pre-processing_1.1.py --all-guardian`) | `symfilter_all_guardian_*.csv` | the symmetric relevance filter applied to all 3,000 Guardian articles |
+| `Topic_Modeling/17_telegram_channels.py` | `telegram_channel_counts.csv`, `telegram_channel_gradient.csv` | Telegram by channel |
+| `Topic_Modeling/18_cluster_bootstrap.py`, `build_item_clusters.py` | `item_clusters.csv`, `cluster_bootstrap_*.csv` | bootstrap by Reddit thread, Telegram channel × week, Guardian week |
+| `Topic_Modeling/19_coherence_extended_grid.py` | `symfilter_coherence_extended.csv` | C_v coherence at k = 25 and 30 (single run) |
+| `Sentiment_analysis/10_common_window_sentiment.py` | `common_window_sentiment.csv` | sentiment within the window common to the three sources |
+| `Sentiment_analysis/11_guardian_short_sample.py` | `guardian_short_sample.csv` | Guardian articles cut to a random sample of their own sentences, at the item lengths of Reddit and Telegram |
+| `Sentiment_analysis/12_third_reader_adjudication.py` | `validation_third_reader*.csv`, `validation_adjudicated_labels.csv`, `validation_metrics_adjudicated.csv`, `calibration_poststratified_adjudicated.csv` | third reading of the 42 sentences on which the two annotators disagree; validation metrics with the adjudicated labels |
+| `Figures/fig_order_repetitions.py` | `figures/fig_order_repetitions.*` | Section 4.6 across orders and seeds |
+
+`Figures/fig_topic_charge.py` was revised. Its panel (b) now shows the within-Telegram
+contrast pooled and by channel across the 22 solutions, instead of Telegram as a single
+source.
+
+`build_item_clusters.py` needs the raw collections and the private pseudonym map, so it
+cannot be run from this repository. It is included to document how the clusters were
+built; its output contains only pseudonyms and anonymous labels.
+
+---
+
 ## Licence
 
 Code is released under the MIT Licence (`LICENSE`). Documentation and derived

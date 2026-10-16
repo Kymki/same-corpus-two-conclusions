@@ -1,0 +1,4 @@
+source,n,n_parent_items,gap_raw,gap_poststrat,gap_ps_itemweighted,gap_ps_ci_lo,gap_ps_ci_hi,ECE_raw,ECE_poststrat,ESS_poststrat,ESS_itemweighted,item_mean_reported,item_mean_corrected_naive,item_mean_corrected_ps
+Guardian,120,108,0.0906,0.083,0.1025,0.0001,0.1644,0.1003,0.1003,87.1,53.7,53.6,44.5,45.3
+Reddit,119,118,-0.0215,0.0379,-0.042,-0.0549,0.1293,0.0838,0.1108,82.3,61.6,56.8,59.0,53.0
+Telegram,119,105,0.0414,0.0607,0.0806,-0.0318,0.1484,0.0558,0.0684,83.6,48.5,53.4,49.3,47.3

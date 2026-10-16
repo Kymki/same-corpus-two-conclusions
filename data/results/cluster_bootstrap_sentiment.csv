@@ -1,0 +1,73 @@
+subset,scheme,quantity,platform,estimate,ci_lo,ci_hi,n_items,n_clusters
+full,item,mean_neg_prob,Guardian,53.59,53.12,54.07,1773.0,
+full,item,mean_valence,Guardian,-39.13,-39.88,-38.42,1773.0,
+full,item,mean_charge,Guardian,68.05,67.77,68.34,1773.0,
+full,item,mean_neg_prob,Reddit,56.84,56.19,57.47,6655.0,
+full,item,mean_valence,Reddit,-41.9,-42.85,-40.89,6655.0,
+full,item,mean_charge,Reddit,71.78,71.4,72.21,6655.0,
+full,item,mean_neg_prob,Telegram,53.41,52.36,54.53,1610.0,
+full,item,mean_valence,Telegram,-40.58,-42.25,-39.06,1610.0,
+full,item,mean_charge,Telegram,66.23,65.5,66.98,1610.0,
+full,item,diff_neg_prob,Guardian - Reddit,-3.25,-4.06,-2.44,,
+full,item,diff_neg_prob,Guardian - Telegram,0.18,-1.03,1.33,,
+full,item,diff_neg_prob,Reddit - Telegram,3.43,2.15,4.62,,
+full,cluster_week,mean_neg_prob,Guardian,53.59,53.0,54.22,1773.0,35.0
+full,cluster_week,mean_valence,Guardian,-39.13,-40.13,-38.19,1773.0,35.0
+full,cluster_week,mean_charge,Guardian,68.05,67.72,68.43,1773.0,35.0
+full,cluster_week,mean_neg_prob,Reddit,56.84,55.84,57.77,6655.0,863.0
+full,cluster_week,mean_valence,Reddit,-41.9,-43.33,-40.39,6655.0,863.0
+full,cluster_week,mean_charge,Reddit,71.78,71.17,72.36,6655.0,863.0
+full,cluster_week,mean_neg_prob,Telegram,53.41,52.61,54.7,1610.0,19.0
+full,cluster_week,mean_valence,Telegram,-40.58,-43.23,-38.78,1610.0,19.0
+full,cluster_week,mean_charge,Telegram,66.23,65.37,67.15,1610.0,19.0
+full,cluster_week,diff_neg_prob,Guardian - Reddit,-3.25,-4.34,-2.09,,
+full,cluster_week,diff_neg_prob,Guardian - Telegram,0.18,-1.34,1.2,,
+full,cluster_week,diff_neg_prob,Reddit - Telegram,3.43,1.69,4.65,,
+full,cluster_day,mean_neg_prob,Guardian,53.59,53.08,54.07,1773.0,238.0
+full,cluster_day,mean_valence,Guardian,-39.13,-39.89,-38.31,1773.0,238.0
+full,cluster_day,mean_charge,Guardian,68.05,67.76,68.33,1773.0,238.0
+full,cluster_day,mean_neg_prob,Reddit,56.84,55.84,57.78,6655.0,863.0
+full,cluster_day,mean_valence,Reddit,-41.9,-43.37,-40.36,6655.0,863.0
+full,cluster_day,mean_charge,Reddit,71.78,71.15,72.38,6655.0,863.0
+full,cluster_day,mean_neg_prob,Telegram,53.41,52.28,54.64,1610.0,87.0
+full,cluster_day,mean_valence,Telegram,-40.58,-42.47,-38.79,1610.0,87.0
+full,cluster_day,mean_charge,Telegram,66.23,65.38,67.0,1610.0,87.0
+full,cluster_day,diff_neg_prob,Guardian - Reddit,-3.25,-4.38,-2.08,,
+full,cluster_day,diff_neg_prob,Guardian - Telegram,0.18,-1.21,1.43,,
+full,cluster_day,diff_neg_prob,Reddit - Telegram,3.43,1.77,4.94,,
+symmetric,item,mean_neg_prob,Guardian,53.59,53.07,54.06,1773.0,
+symmetric,item,mean_valence,Guardian,-39.13,-39.83,-38.34,1773.0,
+symmetric,item,mean_charge,Guardian,68.05,67.75,68.34,1773.0,
+symmetric,item,mean_neg_prob,Reddit,59.82,59.09,60.62,3404.0,
+symmetric,item,mean_valence,Reddit,-46.09,-47.34,-44.91,3404.0,
+symmetric,item,mean_charge,Reddit,73.55,73.06,74.05,3404.0,
+symmetric,item,mean_neg_prob,Telegram,52.93,51.69,54.23,1115.0,
+symmetric,item,mean_valence,Telegram,-40.23,-42.04,-38.31,1115.0,
+symmetric,item,mean_charge,Telegram,65.62,64.75,66.53,1115.0,
+symmetric,item,diff_neg_prob,Guardian - Reddit,-6.23,-7.17,-5.34,,
+symmetric,item,diff_neg_prob,Guardian - Telegram,0.66,-0.72,2.02,,
+symmetric,item,diff_neg_prob,Reddit - Telegram,6.89,5.36,8.25,,
+symmetric,cluster_week,mean_neg_prob,Guardian,53.59,52.97,54.25,1773.0,35.0
+symmetric,cluster_week,mean_valence,Guardian,-39.13,-40.15,-38.16,1773.0,35.0
+symmetric,cluster_week,mean_charge,Guardian,68.05,67.71,68.4,1773.0,35.0
+symmetric,cluster_week,mean_neg_prob,Reddit,59.82,58.74,60.88,3404.0,814.0
+symmetric,cluster_week,mean_valence,Reddit,-46.09,-47.65,-44.44,3404.0,814.0
+symmetric,cluster_week,mean_charge,Reddit,73.55,72.88,74.21,3404.0,814.0
+symmetric,cluster_week,mean_neg_prob,Telegram,52.93,51.14,54.64,1115.0,19.0
+symmetric,cluster_week,mean_valence,Telegram,-40.23,-43.14,-36.79,1115.0,19.0
+symmetric,cluster_week,mean_charge,Telegram,65.62,65.06,66.27,1115.0,19.0
+symmetric,cluster_week,diff_neg_prob,Guardian - Reddit,-6.23,-7.52,-5.0,,
+symmetric,cluster_week,diff_neg_prob,Guardian - Telegram,0.66,-1.18,2.55,,
+symmetric,cluster_week,diff_neg_prob,Reddit - Telegram,6.89,4.8,9.13,,
+symmetric,cluster_day,mean_neg_prob,Guardian,53.59,53.12,54.08,1773.0,238.0
+symmetric,cluster_day,mean_valence,Guardian,-39.13,-39.9,-38.4,1773.0,238.0
+symmetric,cluster_day,mean_charge,Guardian,68.05,67.78,68.35,1773.0,238.0
+symmetric,cluster_day,mean_neg_prob,Reddit,59.82,58.59,60.83,3404.0,814.0
+symmetric,cluster_day,mean_valence,Reddit,-46.09,-47.62,-44.29,3404.0,814.0
+symmetric,cluster_day,mean_charge,Reddit,73.55,72.76,74.21,3404.0,814.0
+symmetric,cluster_day,mean_neg_prob,Telegram,52.93,51.37,54.5,1115.0,82.0
+symmetric,cluster_day,mean_valence,Telegram,-40.23,-42.55,-37.78,1115.0,82.0
+symmetric,cluster_day,mean_charge,Telegram,65.62,64.76,66.58,1115.0,82.0
+symmetric,cluster_day,diff_neg_prob,Guardian - Reddit,-6.23,-7.33,-4.94,,
+symmetric,cluster_day,diff_neg_prob,Guardian - Telegram,0.66,-0.87,2.29,,
+symmetric,cluster_day,diff_neg_prob,Reddit - Telegram,6.89,5.0,8.71,,

@@ -133,6 +133,34 @@ Figure_Paper_Tesi/
 !data/results/commonwindow_corpus_profile.csv
 !data/results/commonwindow_coherence_values.csv
 !data/results/commonwindow_ksweep_similarity.csv
+# Revisione Round 1: chunked riequilibrato, BERTopic, design affiancati (richiesta RP)
+!data/results/chunked_rebalanced_ksweep_similarity.csv
+!data/results/bertopic_symfilter_ksweep_similarity.csv
+!data/results/bertopic_symfilter_topic_terms.csv
+!data/results/bertopic_symfilter_truncation.csv
+!data/results/table_2_1_summary.csv
+!data/results/design_costs.csv
+# Ordine canonico degli item e ripetizioni ordine x seed (triage 2.6, richiesta RP)
+!data/results/item_order_manifest.csv
+!data/results/repetitions_symmetric.csv
+!data/results/repetitions_chunked.csv
+!data/results/repetitions_summary.csv
+!data/results/verify_lda_order.csv
+# Triage 2.3, 2.5, 2.10, 2.11, 2.14 (richiesta RP)
+!data/results/symfilter_all_guardian_*.csv
+!data/results/item_clusters.csv
+!data/results/cluster_bootstrap_*.csv
+!data/results/common_window_sentiment.csv
+!data/results/guardian_short_sample.csv
+!data/results/telegram_channel_*.csv
+!data/results/topic_charge_*.csv
+!data/results/symfilter_coherence_extended.csv
+!data/results/topic_category_agreement.csv
+!data/results/validation_third_reader.csv
+!data/results/validation_third_reader_summary.csv
+!data/results/validation_adjudicated_labels.csv
+!data/results/validation_metrics_adjudicated.csv
+!data/results/calibration_poststratified_adjudicated.csv
 
 # Pseudonimizzazione ID Reddit: salt e mappa inversa restano fuori dal repo
 reddit_pseudonym_salt.txt
@@ -142,3 +170,5 @@ ID_riservati*.json
 
 # La regola *.txt piu' sopra escluderebbe la licenza della documentazione
 !LICENSE-docs.txt
+# ...e il file delle dipendenze citato nel README
+!requirements.txt

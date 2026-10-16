@@ -37,6 +37,7 @@ from scipy.spatial.distance import jensenshannon
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import DATA_PROCESSED, DATA_RESULTS
+from item_order import canonical_order
 
 INPUT_CSV = os.path.join(DATA_PROCESSED, "dati_testuali_preproc_consolidati.csv")
 OUT = os.path.join(DATA_RESULTS, "lengthmatched_ksweep_similarity.csv")
@@ -79,6 +80,7 @@ def build_items():
         lem=('testo_lemmatizzato', ' '.join),
         clean=('testo_pulito_base', lambda s: ' '.join(map(str, s))),
     ).reset_index()
+    items = canonical_order(items)
     items['relevant'] = items['clean'].str.lower().apply(lambda t: any(k in t for k in WAR_KW))
     items['tokens'] = items['lem'].str.split()
     return items

@@ -1,0 +1,11 @@
+profile,k,runs,leads_Guardian-Reddit,leads_Guardian-Telegram,leads_Reddit-Telegram,margin_median,margin_min,margin_max
+argmax,5,22,3,1,18,0.08,0.002,0.304
+argmax,7,22,5,1,16,0.055,0.001,0.422
+argmax,10,22,2,1,19,0.128,0.018,0.451
+argmax,15,22,0,1,21,0.285,0.047,0.46
+argmax,21,22,0,3,19,0.326,0.001,0.592
+mean,5,22,3,1,18,0.054,0.007,0.23
+mean,7,22,5,1,16,0.049,0.003,0.347
+mean,10,22,2,1,19,0.106,0.014,0.397
+mean,15,22,0,0,22,0.268,0.037,0.415
+mean,21,22,0,0,22,0.305,0.018,0.51

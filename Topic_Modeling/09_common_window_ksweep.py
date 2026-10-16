@@ -34,6 +34,7 @@ from scipy.spatial.distance import jensenshannon
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import DATA_PROCESSED, DATA_RESULTS
+from item_order import canonical_order
 
 INPUT_CSV = os.path.join(DATA_PROCESSED, "dati_testuali_preproc_consolidati.csv")
 OUT_PROFILE = os.path.join(DATA_RESULTS, "commonwindow_corpus_profile.csv")
@@ -76,6 +77,7 @@ def main():
         clean=('testo_pulito_base', lambda s: ' '.join(map(str, s))),
         t=('t', 'first'),
     ).reset_index()
+    items = canonical_order(items)
     items = items[items['clean'].str.lower().apply(lambda x: any(k in x for k in WAR_KW))]
     items = items.dropna(subset=['t'])
 

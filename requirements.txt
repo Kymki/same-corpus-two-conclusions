@@ -1,0 +1,45 @@
+# Python 3.11.9. Versions installed in the environment in which the submitted results
+# were re-run and the revision analyses were computed.
+
+# API & data collection
+praw==7.8.1
+telethon==1.43.2
+requests==2.33.1
+beautifulsoup4==4.14.3
+newspaper3k==0.2.8
+playwright==1.59.0
+lxml==6.1.0
+lxml_html_clean==0.4.4
+urllib3==2.6.3
+
+# NLP & language processing
+spacy==3.8.14
+nltk==3.9.4
+gensim==4.4.0
+transformers==5.9.0
+langdetect==1.0.9
+python-dateutil==2.9.0.post0
+
+# Machine learning & sentiment
+# The CUDA 12.4 build of torch was used; the CPU build also works, more slowly.
+torch==2.6.0
+scikit-learn==1.8.0
+scipy==1.17.1
+
+# BERTopic robustness check (Topic_Modeling/11_bertopic_symmetric_ksweep.py)
+bertopic==0.17.4
+sentence-transformers==6.1.0
+umap-learn==0.5.12
+hdbscan==0.8.44
+
+# Data analysis & visualisation
+pandas==3.0.2
+numpy==2.4.3
+matplotlib==3.10.9
+seaborn==0.13.2
+wordcloud==1.9.6
+tqdm==4.67.3
+
+# Database & infrastructure
+elasticsearch==9.3.0
+python-dotenv==1.2.2
