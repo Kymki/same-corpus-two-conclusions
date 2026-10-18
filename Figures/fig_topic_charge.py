@@ -98,8 +98,10 @@ def main():
                   f"negativi {(ok.estimate < 0).sum()}, positivi {(ok.estimate > 0).sum()}, "
                   f"mediana {ok.estimate.median():.2f}")
 
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13, 5.4),
-                                   gridspec_kw={"width_ratios": [1, 1]})
+    # Panels stacked, each at full text width, drawn at print size (15.2 cm, the
+    # text width) so that the type sizes below are the sizes on the page.
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(6.0, 7.6),
+                                   gridspec_kw={"height_ratios": [9, 6.2]})
 
     for i, lab in enumerate(order_a):
         for plat in ORDER:
@@ -118,8 +120,9 @@ def main():
     ax1.set_yticklabels(order_a, fontsize=8.5)
     ax1.set_xlabel(r"Affective charge, $1-\bar{p}_{\mathrm{neu}}$ (%)")
     ax1.set_title("(a) Topic-conditional charge by platform ($k$=10)",
-                  fontsize=11.5, loc="left")
-    ax1.legend(fontsize=8.5, loc="lower right")
+                  fontsize=10.5, loc="left", pad=16)
+    ax1.legend(fontsize=8.5, loc="lower left", bbox_to_anchor=(0, 1.0), ncol=3,
+               frameon=False, borderaxespad=0.1, handletextpad=0.3, columnspacing=1.2)
 
     rng = np.random.default_rng(0)                      # jitter only; does not touch the data
     for i, (eff, lab, _) in enumerate(ROWS):
@@ -146,7 +149,7 @@ def main():
                          for _, lab, c in ROWS], fontsize=9)
     ax2.set_ylim(len(ROWS) - 0.5, -0.5)
     ax2.set_xlabel("Diplomatic minus kinetic charge (percentage points)")
-    ax2.set_title("(b) Within-Telegram contrast, pooled and by channel", fontsize=11.5,
+    ax2.set_title("(b) Within-Telegram contrast, pooled and by channel", fontsize=10.5,
                   loc="left", pad=14)
     ax2.text(0, 1.015, "dots: 22 order x seed solutions per $k$; bar: median; "
              "open marker: canonical run", transform=ax2.transAxes, fontsize=8.5,
@@ -157,8 +160,11 @@ def main():
                               linestyle="", markersize=8, label="canonical run"))
     ax2.legend(handles=handles, fontsize=8.5, loc="lower left")
 
+    for ax in (ax1, ax2):
+        ax.xaxis.label.set_size(9.5)
+        ax.tick_params(axis="x", labelsize=8.5)
     fig.suptitle("Topic-conditional affective charge (symmetric subset)",
-                 fontsize=13, y=1.01)
+                 fontsize=11.5, y=1.0)
     fig.tight_layout()
     for p in (OUT_PNG, OUT_PDF):
         fig.savefig(p, dpi=300, bbox_inches="tight", facecolor="white")

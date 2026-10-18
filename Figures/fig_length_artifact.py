@@ -1,5 +1,8 @@
 """
-Figure 1: document length inflates item-level sentiment shares.
+Document length inflates item-level sentiment shares (Section 4.3).
+
+Two panels, one quantity each: (a) the share of items classified negative
+(argmax), (b) the mean negative probability, on the same scale.
 
 Reproduces the simulation described in Section 4.3. The sentence-level
 probability distribution is held fixed at the values observed for The Guardian
@@ -119,13 +122,15 @@ def main():
     meta = pd.read_csv(META)
     spi = meta.groupby("fonte")["n_sentences"].mean()
 
-    fig, ax = plt.subplots(figsize=(8.2, 5.2))
-    ax.plot(sim["n_sentences"], sim["simulated_argmax_negative_pct"],
-            color="#c0392b", linewidth=2, zorder=2,
-            label="Simulated argmax-negative share (identical sentence distribution)")
-    ax.plot(sim["n_sentences"], sim["simulated_mean_negprob_pct"],
-            color="#27ae60", linewidth=2, zorder=2,
-            label="Simulated mean negative probability (length-invariant)")
+    # Two panels, one quantity each (a share of items, a mean probability), on the
+    # same 40-102 scale so the contrast stays visible; drawn at print size (15.2 cm).
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(6.0, 6.6), sharex=True, sharey=True)
+    ax1.plot(sim["n_sentences"], sim["simulated_argmax_negative_pct"],
+             color="#c0392b", linewidth=2, zorder=2,
+             label="Simulated (identical sentence distribution)")
+    ax2.plot(sim["n_sentences"], sim["simulated_mean_negprob_pct"],
+             color="#27ae60", linewidth=2, zorder=2,
+             label="Simulated (length-invariant)")
 
     obs_rows = []
     for _, r in obs.iterrows():
@@ -134,31 +139,34 @@ def main():
             continue
         x = spi[src]
         col, mk = PLATFORM_COLORS[src], MARKERS[src]
-        ax.scatter(x, r["item_neg_meanprob_pct"], s=78, color=col, marker=mk,
-                   edgecolor="white", linewidth=1.1, zorder=4)
-        ax.scatter(x, r["item_mean_negprob_pct"], s=78, facecolor="white",
-                   edgecolor=col, marker=mk, linewidth=1.8, zorder=4)
-        ax.annotate(PLATFORM_LABELS[src], (x, r["item_neg_meanprob_pct"]),
-                    textcoords="offset points", xytext=(0, 11), ha="center",
-                    fontsize=9.5, color=col, fontweight="bold")
+        # labels below the markers in (a), where the curve runs above them; above in (b)
+        for ax, y, dy, va in ((ax1, r["item_neg_meanprob_pct"], -9, "top"),
+                              (ax2, r["item_mean_negprob_pct"], 9, "bottom")):
+            ax.scatter(x, y, s=70, color=col, marker=mk, edgecolor="white",
+                       linewidth=1.1, zorder=4)
+            ax.annotate(PLATFORM_LABELS[src], (x, y), textcoords="offset points",
+                        xytext=(0, dy), ha="center", va=va, fontsize=8.5, color=col,
+                        fontweight="bold")
         obs_rows.append({"source": PLATFORM_LABELS[src], "sentences_per_item": round(x, 2),
                          "observed_argmax_negative_pct": r["item_neg_meanprob_pct"],
                          "observed_mean_negprob_pct": r["item_mean_negprob_pct"]})
 
-    ax.scatter([], [], s=78, color="0.35", marker="o", edgecolor="white",
-               label="Observed argmax-negative share")
-    ax.scatter([], [], s=78, facecolor="white", edgecolor="0.35", marker="o",
-               linewidth=1.8, label="Observed mean negative probability")
-
-    ax.set_xscale("log")
-    ax.set_xticks(N_GRID)
-    ax.set_xticklabels(N_GRID)
-    ax.set_xlabel("Sentences per item (log scale)")
-    ax.set_ylabel("Negativity (%)")
-    ax.set_ylim(40, 102)
-    ax.set_title("Document length inflates item-level sentiment shares\n"
-                 "(observed platforms overlaid on simulation)", fontsize=12.5)
-    ax.legend(loc="center right", fontsize=8.5)
+    for ax, loc in ((ax1, "lower right"), (ax2, "upper right")):
+        ax.scatter([], [], s=70, color="0.35", marker="o", edgecolor="white",
+                   label="Observed platforms")
+        ax.legend(loc=loc, fontsize=8.5)
+        ax.tick_params(labelsize=8.5)
+    ax1.set_title("(a) Share of items classified negative (argmax)", fontsize=10.5, loc="left")
+    ax2.set_title("(b) Mean negative probability", fontsize=10.5, loc="left")
+    ax1.set_ylabel("Items classified negative (%)", fontsize=9.5)
+    ax2.set_ylabel("Mean negative probability (%)", fontsize=9.5)
+    ax2.set_xscale("log")
+    ax2.set_xticks(N_GRID)
+    ax2.set_xticklabels(N_GRID)
+    ax2.set_xlabel("Sentences per item (log scale)", fontsize=9.5)
+    ax2.set_ylim(40, 102)
+    fig.suptitle("Document length inflates item-level sentiment shares\n"
+                 "(observed platforms overlaid on simulation)", fontsize=11.5)
     fig.tight_layout()
     for p in (OUT_PNG, OUT_PDF):
         fig.savefig(p, dpi=300, bbox_inches="tight", facecolor="white")
