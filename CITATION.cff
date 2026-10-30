@@ -10,9 +10,7 @@ authors:
   - family-names: Pareschi
     given-names: Remo
 repository-code: "https://github.com/Kymki/same-corpus-two-conclusions"
-license:
-  - MIT
-  - CC-BY-4.0
+license: MIT
 abstract: >-
   Replication package for "The Same Corpus, Two Conclusions: How Analyst Choices
   Determine Cross-Platform Findings". The paper shows that three routine analyst
