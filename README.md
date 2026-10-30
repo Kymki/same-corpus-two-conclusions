@@ -32,6 +32,25 @@ pair at k = 7, 10, 15 and 21, with cosine 0.97, 0.96, 0.95 and 0.75 against 0.43
 0.40, 0.39 and 0.42 for Guardian–Telegram. Nothing changes between the two files
 except the symmetry of the relevance criterion.
 
+These are the figures of the canonical run (document order of the manifest, seed 100),
+the one the submitted analysis used. LDA is sensitive to document order, so
+`Topic_Modeling/13_order_seed_repetitions.py` refits each k on 22 order × seed
+combinations. Across them, Reddit–Telegram is more similar than Guardian–Telegram in
+20, 19, 21 and 21 of 22 at k = 7, 10, 15 and 21 (between 17 and 22 of 22 over the whole
+grid, k = 5 to 30), but the median difference between the
+two (0.29, 0.23, 0.11 and 0.30) is smaller than in the canonical run (0.54, 0.56, 0.56
+and 0.33), which has the largest difference of the 22 at k = 7, 10 and 15. Per-k values
+are in `data/results/order_seed_pair_gaps.csv` (`Topic_Modeling/20_order_seed_decomposition.py`).
+With ten seeds on the same 11 orders (`Topic_Modeling/21_order_seed_ten_seeds.py`, 110
+runs per k), Reddit–Telegram is more similar in 99 and 96 of 110 at k = 10 and 21, with
+median differences of 0.21 and 0.24; the canonical difference is the largest of the 22
+and the third largest of the 110 at k = 10. Of the variance of the Guardian–Telegram
+similarity, the order accounts for 1% at k = 10, the seed for 0% and the residual for
+99% (0%, 0% and 100% at k = 21; variance components from the mean squares). Refitted
+runs reproduce the archived ones to within 0.0011, so the residual is the interaction
+of the two: a solution is fixed by order and seed together, not by either alone. Per-k
+values are in `data/results/ten_seed_decomposition.csv`.
+
 A third file, `data/results/commonwindow_ksweep_similarity.csv`, repeats the
 symmetric sweep on the 40-day window common to all three sources, to rule out the
 unequal collection windows as an explanation.
@@ -173,6 +192,8 @@ seen before the opening are in [`BLIND_PROTOCOL.md`](BLIND_PROTOCOL.md).
 | `Topic_Modeling/11_bertopic_symmetric_ksweep.py` | `bertopic_symfilter_*.csv` | BERTopic on the symmetric subset |
 | `Topic_Modeling/12_length_designs_table.py` | `table_2_1.tex`, `table_2_1_summary.csv`, `design_costs.csv` | the similarity designs side by side, and what each costs |
 | `Topic_Modeling/13_order_seed_repetitions.py` | `repetitions_*.csv` | 22 solutions per k (11 document orders × 2 seeds), k up to 30 |
+| `Topic_Modeling/20_order_seed_decomposition.py` | `order_seed_decomposition.csv`, `order_seed_pair_gaps.csv` | spread due to document order versus seed; the 22 solutions summarised beside the bootstrap intervals; the canonical run set against the 22 |
+| `Topic_Modeling/21_order_seed_ten_seeds.py` | `ten_seed_*.csv` | order and seed separated on 11 orders × 10 seeds at k = 10 and 21 |
 | `Topic_Modeling/14_topic_charge_repetitions.py`, `15_topic_charge_summary.py`, `topic_category_rule.py` | `topic_charge_*.csv`, `topic_category_agreement.csv` | Section 4.8 on the same 22 solutions; see `BLIND_PROTOCOL.md` |
 | `Topic_Modeling/16_symfilter_all_guardian.py` (with `Lemmatization/01_pre-processing_1.1.py --all-guardian`) | `symfilter_all_guardian_*.csv` | the symmetric relevance filter applied to all 3,000 Guardian articles |
 | `Topic_Modeling/17_telegram_channels.py` | `telegram_channel_counts.csv`, `telegram_channel_gradient.csv` | Telegram by channel |
@@ -181,11 +202,19 @@ seen before the opening are in [`BLIND_PROTOCOL.md`](BLIND_PROTOCOL.md).
 | `Sentiment_analysis/10_common_window_sentiment.py` | `common_window_sentiment.csv` | sentiment within the window common to the three sources |
 | `Sentiment_analysis/11_guardian_short_sample.py` | `guardian_short_sample.csv` | Guardian articles cut to a random sample of their own sentences, at the item lengths of Reddit and Telegram |
 | `Sentiment_analysis/12_third_reader_adjudication.py` | `validation_third_reader*.csv`, `validation_adjudicated_labels.csv`, `validation_metrics_adjudicated.csv`, `calibration_poststratified_adjudicated.csv` | third reading of the 42 sentences on which the two annotators disagree; validation metrics with the adjudicated labels |
+| `Sentiment_analysis/13_continuous_measures_k21.py` | `continuous_measures_by_topic_platform_k21.csv`, `continuous_measures_inversions_k21.csv` | the three continuous measures by topic and platform on the k = 21 model, with the topics whose platform ordering changes across measures |
 | `Figures/fig_order_repetitions.py` | `figures/fig_order_repetitions.*` | Section 4.6 across orders and seeds |
 
 `Figures/fig_topic_charge.py` was revised. Its panel (b) now shows the within-Telegram
 contrast pooled and by channel across the 22 solutions, instead of Telegram as a single
-source.
+source. `Figures/fig_length_artifact.py` was revised to plot the share of items classified
+negative and the mean negative probability in two panels instead of on one axis; the
+values it plots are unchanged.
+
+`data/results/figures/submitted_version/` keeps these two figures as they appeared in the
+submitted manuscript. The numbers they plot are in `fig_topic_charge_values.csv` beside
+them and, for the length figure, in `figures/fig_length_artifact_values.csv`, which the
+revision did not change. No other result file of the submitted analysis was changed.
 
 `build_item_clusters.py` needs the raw collections and the private pseudonym map, so it
 cannot be run from this repository. It is included to document how the clusters were
@@ -203,4 +232,5 @@ journal's open-access terms.
 ## Citing
 
 Please cite the article. If you use the code or the derived tables directly,
-please also cite the archived release (DOI to be added on publication).
+please also cite the archived release on Zenodo: the article cites release v1.0 by its
+version DOI.

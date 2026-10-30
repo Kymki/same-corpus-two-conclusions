@@ -161,6 +161,14 @@ Figure_Paper_Tesi/
 !data/results/validation_adjudicated_labels.csv
 !data/results/validation_metrics_adjudicated.csv
 !data/results/calibration_poststratified_adjudicated.csv
+!data/results/order_seed_decomposition.csv
+!data/results/order_seed_pair_gaps.csv
+!data/results/figures/submitted_version/*
+!data/results/continuous_measures_by_topic_platform_k21.csv
+!data/results/continuous_measures_inversions_k21.csv
+!data/results/ten_seed_repetitions.csv
+!data/results/ten_seed_decomposition.csv
+!data/results/ten_seed_correlations.csv
 
 # Pseudonimizzazione ID Reddit: salt e mappa inversa restano fuori dal repo
 reddit_pseudonym_salt.txt

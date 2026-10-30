@@ -1,0 +1,7 @@
+topic,top_terms,pair,order_neg_prob,order_valence,order_charge,overlap_neg_prob,overlap_valence,overlap_charge
+2,"say, year, not, world",Reddit-Telegram,Telegram>Reddit>Guardian,Telegram>Reddit>Guardian,Reddit>Telegram>Guardian,True,False,True
+5,"say, russian, russia, ukraine",Guardian-Telegram,Reddit>Telegram>Guardian,Reddit>Telegram>Guardian,Reddit>Guardian>Telegram,True,True,True
+17,"say, nato, drone, russia",Guardian-Telegram,Reddit>Guardian>Telegram,Reddit>Guardian>Telegram,Reddit>Telegram>Guardian,True,True,True
+18,"drone, russian, ukrainian, ukraine",Guardian-Telegram,Reddit>Telegram>Guardian,Telegram>Reddit>Guardian,Reddit>Guardian>Telegram,True,True,True
+18,"drone, russian, ukrainian, ukraine",Reddit-Telegram,Reddit>Telegram>Guardian,Telegram>Reddit>Guardian,Reddit>Guardian>Telegram,True,True,False
+20,"ukraine, say, russia, putin",Guardian-Reddit,Guardian>Reddit>Telegram,Guardian>Reddit>Telegram,Reddit>Guardian>Telegram,True,True,True

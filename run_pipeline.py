@@ -72,6 +72,7 @@ PLAN = [
     ]),
     (7, "RQ2 - measure dependence across continuous summaries (Section 4.5)", [
         ("Sentiment_analysis/08_continuous_measures.py", None),
+        ("Sentiment_analysis/13_continuous_measures_k21.py", None),
     ]),
     (8, "RQ3 - the symmetric relevance criterion: the paper's central result "
         "(Section 4.6, Figure 3)", [
@@ -91,6 +92,9 @@ PLAN = [
         ("Topic_Modeling/13_order_seed_repetitions.py symmetric", None),
         ("Topic_Modeling/13_order_seed_repetitions.py chunked", None),
         ("Topic_Modeling/13_order_seed_repetitions.py summary", None),
+        ("Topic_Modeling/20_order_seed_decomposition.py", None),
+        ("Topic_Modeling/21_order_seed_ten_seeds.py run", None),
+        ("Topic_Modeling/21_order_seed_ten_seeds.py summary", None),
         ("Topic_Modeling/19_coherence_extended_grid.py", None),
     ]),
     (11, "Revision: rebalanced chunked design, BERTopic, and the designs side by side "
